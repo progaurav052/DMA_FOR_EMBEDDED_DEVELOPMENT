@@ -105,8 +105,10 @@ int main(void)
 
 	 //after this wait for transmit complete
 	 //USE API poll for TC complete
+	 // here the basic checking is it checks for the FULL_TRANSFER flag set inside the while loop
 	 HAL_DMA_PollForTransfer(&hdma_memtomem_dma2_stream0, HAL_DMA_FULL_TRANSFER, HAL_MAX_DELAY);
-	 //wait untill the HAL_DMA_FULL_TRANSFER flag is set , if flag is not set wait for MAX_DELAY
+	 //wait until the HAL_DMA_FULL_TRANSFER flag is set , if flag is not set wait for MAX_DELAY
+	 // as far as the performance is concerned this code does not add any advantage because we are using polling
 
 
 	 //wait delay for 1 sec to see the toggle

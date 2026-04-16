@@ -454,3 +454,884 @@
 2026-04-16 15:30:23,987 [ERROR] ConfigurationRetriever:142 - IOException on connection: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
 2026-04-16 15:30:24,047 [ERROR] ConfigurationRetriever:142 - IOException on connection: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
 2026-04-16 15:30:24,095 [ERROR] ConfigurationRetriever:142 - IOException on connection: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+2026-04-16 15:43:33,435 [INFO] McuFinderGlobals:76 - Set McuFinderConnectedMode to false
+2026-04-16 15:43:33,451 [INFO] MultiScanPanel:200 - Auto-refresh data requested => check proxy status ongoing
+2026-04-16 15:43:33,452 [INFO] MultiScanPanel:204 - Proxy status is invalid
+2026-04-16 15:43:33,459 [INFO] FinderPluginLoader:96 - Searching for filters in installed packs
+2026-04-16 15:43:35,065 [WARN] DetailPanel:346 - Failed to get advertising image, set to default
+2026-04-16 15:44:13,455 [INFO] MainUpdater:2872 - connection check result : 22
+2026-04-16 15:44:13,996 [INFO] MicroXplorer:468 - Change Database Path : 
+2026-04-16 15:44:13,997 [INFO] MicroXplorer:498 - Change Database Version : DB.6.0.150
+2026-04-16 15:44:14,083 [ERROR] ProjectManagerView:395 - 
+java.lang.NullPointerException: Cannot invoke "javax.swing.JTextField.getText()" because the return value of "java.util.List.get(int)" is null
+	at com.st.microxplorer.plugins.projectmanager.gui.ProjectChoiceTab$9.caretUpdate(ProjectChoiceTab.java:2706) ~[filemanager.jar:?]
+	at javax.swing.text.JTextComponent.fireCaretUpdate(JTextComponent.java:408) ~[?:?]
+	at javax.swing.text.JTextComponent$MutableCaretEvent.fire(JTextComponent.java:4484) ~[?:?]
+	at javax.swing.text.JTextComponent$MutableCaretEvent.stateChanged(JTextComponent.java:4506) ~[?:?]
+	at javax.swing.text.DefaultCaret.fireStateChanged(DefaultCaret.java:857) ~[?:?]
+	at javax.swing.text.DefaultCaret.changeCaretPosition(DefaultCaret.java:1343) ~[?:?]
+	at javax.swing.text.DefaultCaret.handleSetDot(DefaultCaret.java:1242) ~[?:?]
+	at javax.swing.text.DefaultCaret.setDot(DefaultCaret.java:1223) ~[?:?]
+	at javax.swing.text.DefaultCaret$Handler.insertUpdate(DefaultCaret.java:1819) ~[?:?]
+	at javax.swing.text.AbstractDocument.fireInsertUpdate(AbstractDocument.java:227) ~[?:?]
+	at javax.swing.text.AbstractDocument.handleInsertString(AbstractDocument.java:781) ~[?:?]
+	at javax.swing.text.AbstractDocument.insertString(AbstractDocument.java:740) ~[?:?]
+	at javax.swing.text.PlainDocument.insertString(PlainDocument.java:131) ~[?:?]
+	at javax.swing.text.AbstractDocument.replace(AbstractDocument.java:699) ~[?:?]
+	at javax.swing.text.JTextComponent.setText(JTextComponent.java:1725) ~[?:?]
+	at com.st.microxplorer.plugins.projectmanager.gui.ProjectChoiceTab.createHeapStackFields(ProjectChoiceTab.java:993) ~[filemanager.jar:?]
+	at com.st.microxplorer.plugins.projectmanager.gui.ProjectChoiceTab.buildLinkSettingsPanel(ProjectChoiceTab.java:3813) ~[filemanager.jar:?]
+	at com.st.microxplorer.plugins.projectmanager.gui.ProjectChoiceTab.defineWindowsFields(ProjectChoiceTab.java:1987) ~[filemanager.jar:?]
+	at com.st.microxplorer.plugins.projectmanager.gui.ProjectChoiceTab.updateSettings(ProjectChoiceTab.java:558) ~[filemanager.jar:?]
+	at com.st.microxplorer.plugins.projectmanager.gui.ProjectSettingsPanel.UpdateDialog(ProjectSettingsPanel.java:247) ~[filemanager.jar:?]
+	at com.st.microxplorer.plugins.projectmanager.ProjectManagerView.propertyChange(ProjectManagerView.java:392) ~[filemanager.jar:?]
+	at java.beans.PropertyChangeSupport.fire(PropertyChangeSupport.java:343) ~[?:?]
+	at java.beans.PropertyChangeSupport.firePropertyChange(PropertyChangeSupport.java:335) ~[?:?]
+	at java.beans.PropertyChangeSupport.firePropertyChange(PropertyChangeSupport.java:268) ~[?:?]
+	at com.st.microxplorer.util.MXPropertyChangeSupport.firePropertyChange(MXPropertyChangeSupport.java:54) ~[STM32CubeMX.jar:?]
+	at com.st.microxplorer.mxsystem.MxSystem.closeConfig(MxSystem.java:899) ~[STM32CubeMX.jar:?]
+	at com.st.microxplorer.maingui.MainPanel.closeConfig(MainPanel.java:792) ~[STM32CubeMX.jar:?]
+	at com.st.microxplorer.plugins.filemanager.engine.OpenFileManager.loadConfigurationFile(OpenFileManager.java:288) ~[filemanager.jar:?]
+	at com.st.microxplorer.plugins.filemanager.engine.MainFileManager.userLoadConfig(MainFileManager.java:364) ~[filemanager.jar:?]
+	at com.st.microxplorer.plugins.filemanager.engine.MainFileManager.userLoadConfig(MainFileManager.java:342) ~[filemanager.jar:?]
+	at com.st.microxplorer.plugins.filemanager.FileManagerView.getSpecificTask(FileManagerView.java:264) ~[filemanager.jar:?]
+	at com.st.stm32cube.common.mx.editor.CubeMxEditor.getMxTabbedPaneInstance(CubeMxEditor.java:1198) ~[com.st.stm32cube.common.mx_6.15.0.202507011659/:?]
+	at com.st.stm32cube.common.mx.editor.CubeMxEditor$12$1.createSwingComponent(CubeMxEditor.java:1068) ~[com.st.stm32cube.common.mx_6.15.0.202507011659/:?]
+	at com.st.stm32cube.common.mx.oss.core.awtswtbridge.EmbeddedSwingComposite.doComponentCreation(EmbeddedSwingComposite.java:492) ~[com.st.stm32cube.common.mx.oss_6.15.0.202507011659/:?]
+	at com.st.stm32cube.common.mx.oss.core.awtswtbridge.EmbeddedSwingComposite$4.run(EmbeddedSwingComposite.java:291) ~[com.st.stm32cube.common.mx.oss_6.15.0.202507011659/:?]
+	at com.st.stm32cube.common.mx.oss.core.awtswtbridge.AwtEnvironment$2.run(AwtEnvironment.java:166) ~[com.st.stm32cube.common.mx.oss_6.15.0.202507011659/:?]
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:318) ~[?:?]
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:773) ~[?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:720) ~[?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:714) ~[?:?]
+	at java.security.AccessController.doPrivileged(AccessController.java:400) ~[?:?]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87) ~[?:?]
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:742) ~[?:?]
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203) ~[?:?]
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124) ~[?:?]
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113) ~[?:?]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109) ~[?:?]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101) ~[?:?]
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:90) ~[?:?]
+2026-04-16 15:44:14,095 [WARN] ThirdParty:871 - waiting for thirdparty lock release [close project]
+2026-04-16 15:44:14,095 [INFO] ThirdParty:873 - entering critical section [close project]
+2026-04-16 15:44:14,096 [INFO] ThirdParty:883 - exiting critical section [close project]
+2026-04-16 15:44:14,103 [INFO] PinOutPanel:1589 - setPackage(No Configuration,No Configuration)
+2026-04-16 15:44:14,155 [WARN] IpParametersView:155 - Warning: This peripheral hasn't parameters
+2026-04-16 15:44:14,188 [WARN] MainPanel:289 - <html><b><center>Warning: This peripheral has no parameters to be configured<br></b></html>
+2026-04-16 15:44:14,198 [INFO] UtilMem:75 - Begin LoadConfig() Used Memory: 314954136 Bytes (628097024)
+2026-04-16 15:44:14,199 [INFO] MicroXplorer:468 - Change Database Path : 
+2026-04-16 15:44:14,199 [INFO] MicroXplorer:498 - Change Database Version : DB.6.0.150
+2026-04-16 15:44:14,199 [INFO] OpenFileManager:355 - Change cursor
+2026-04-16 15:44:14,289 [INFO] RulesReader:64 - Compatibility file has been processed (317 Rules)
+2026-04-16 15:44:14,338 [INFO] Mcu:2029 - Initializing MCU STM32F446RETx STM32F446RETx STM32F446RET6
+2026-04-16 15:44:15,934 [INFO] Context:786 - Trying to add GPIOservice into a context  which must be forbidden
+2026-04-16 15:44:16,555 [INFO] ImportTextPane:234 - (OptionalMessage_ERROR) Unable to find key (Mcu.ThirdPartyNb) in loaded IOC file
+2026-04-16 15:44:16,556 [INFO] ImportTextPane:234 - (OptionalMessage_ERROR) Unable to find key (Mcu.PinsNb) in loaded IOC file
+2026-04-16 15:44:16,557 [INFO] ImportTextPane:234 - (OptionalMessage_ERROR) Pin0 (VP_RIF_VS_RIF1) cannot be retrieved for this MCU
+2026-04-16 15:44:16,557 [INFO] ImportTextPane:234 - (OptionalMessage_ERROR) Unable to find key (Mcu.IPNb) in loaded IOC file
+2026-04-16 15:44:16,604 [INFO] RtosManager:558 - Registered RTOS mode: class=CMSIS, group=RTOS, mode=CMSIS_V1, owner=FREERTOS
+2026-04-16 15:44:16,604 [INFO] RtosManager:558 - Registered RTOS mode: class=CMSIS, group=RTOS2, mode=CMSIS_V2, owner=FREERTOS
+2026-04-16 15:44:16,604 [INFO] RtosManager:558 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V1, owner=FREERTOS
+2026-04-16 15:44:16,604 [INFO] RtosManager:558 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V2, owner=FREERTOS
+2026-04-16 15:44:16,604 [WARN] ModelIntegratedComponent:184 - Missing modes for component STMicroelectronics:FreeRTOS:0.0.1:STMicroelectronics:RTOS:FreeRTOS:Core:::10.2.0:
+2026-04-16 15:44:16,606 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-04-16 15:44:16,607 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-04-16 15:44:16,607 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-04-16 15:44:16,607 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-04-16 15:44:16,607 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-04-16 15:44:16,607 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-04-16 15:44:16,607 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-04-16 15:44:16,608 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-04-16 15:44:16,608 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-04-16 15:44:16,608 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-04-16 15:44:16,608 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-04-16 15:44:16,608 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-04-16 15:44:16,608 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-04-16 15:44:16,608 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-04-16 15:44:16,608 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-04-16 15:44:16,608 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-04-16 15:44:16,608 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-04-16 15:44:16,608 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-04-16 15:44:16,608 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-04-16 15:44:16,608 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-04-16 15:44:16,608 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-04-16 15:44:16,608 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-04-16 15:44:16,608 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-04-16 15:44:16,608 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-04-16 15:44:16,608 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-04-16 15:44:16,608 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-04-16 15:44:16,608 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-04-16 15:44:16,608 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-04-16 15:44:16,608 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-04-16 15:44:16,608 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-04-16 15:44:16,608 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-04-16 15:44:16,608 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-04-16 15:44:16,609 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-04-16 15:44:16,609 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-04-16 15:44:16,609 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-04-16 15:44:16,609 [WARN] ModelPack:524 - Component already loaded: STMicroelectronics:HAL Drivers:0.0.0:STMicroelectronics:Device:STMicro_Driver:XSPI:HAL::0.0.1:HAL_XSPI
+2026-04-16 15:44:16,614 [INFO] ThirdPartyModel:298 - Start build external matchings
+2026-04-16 15:44:16,616 [INFO] ThirdPartyModel:316 - End build external matchings
+2026-04-16 15:44:16,836 [INFO] UtilMem:75 - End LoadConfig() Used Memory: 497165296 Bytes (628097024)
+2026-04-16 15:44:17,030 [WARN] ThirdParty:833 - waiting for thirdparty lock release [change project]
+2026-04-16 15:44:17,038 [INFO] ThirdParty:835 - entering critical section [change project]
+2026-04-16 15:44:17,038 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USBPD 4.1
+2026-04-16 15:44:17,040 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics ThreadX 1.0.0
+2026-04-16 15:44:17,047 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 2.0.0
+2026-04-16 15:44:17,050 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics LIBJPEG 8.0.0
+2026-04-16 15:44:17,053 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FreeRTOS 0.0.1
+2026-04-16 15:44:17,054 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 1.0.0
+2026-04-16 15:44:17,054 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics STM32_WPAN 1.0.0
+2026-04-16 15:44:17,054 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 3.0.0
+2026-04-16 15:44:17,054 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics HAL Drivers 0.0.0
+2026-04-16 15:44:17,054 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.16.2
+2026-04-16 15:44:17,054 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics ThreadX 0.0.2
+2026-04-16 15:44:17,054 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.0.3
+2026-04-16 15:44:17,054 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.1.2
+2026-04-16 15:44:17,054 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.14.1
+2026-04-16 15:44:17,054 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 1.0.0
+2026-04-16 15:44:17,054 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.1.0
+2026-04-16 15:44:17,054 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 2.0.0
+2026-04-16 15:44:17,055 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.2.0
+2026-04-16 15:44:17,055 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.3.0
+2026-04-16 15:44:17,056 [INFO] ThirdParty:841 - exiting critical section [change project]
+2026-04-16 15:44:17,589 [INFO] PinOutPanel:1589 - setPackage(No Configuration,No Configuration)
+2026-04-16 15:44:17,591 [INFO] PinOutPanel:1589 - setPackage(STM32F446RETx,LQFP64)
+2026-04-16 15:44:18,236 [INFO] UtilMem:75 - Before build in PCC Used Memory: 424707432 Bytes (628097024)
+2026-04-16 15:44:18,607 [INFO] UtilMem:75 - After build in PCC Used Memory: 475561320 Bytes (628097024)
+2026-04-16 15:44:18,640 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:44:18,641 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:44:18,641 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:44:18,642 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:44:18,642 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:44:18,642 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:44:18,642 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:44:18,642 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:44:18,643 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:44:18,643 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:44:18,644 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:44:18,644 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:44:18,644 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:44:18,644 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:44:18,644 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:44:18,644 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:44:18,644 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:44:18,644 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:44:18,645 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:44:18,645 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:44:18,645 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:44:18,645 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:44:18,645 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:44:18,645 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:44:18,645 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:44:18,645 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:44:18,646 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:44:18,646 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:44:18,646 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:44:18,646 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:44:18,646 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:44:18,646 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:44:18,647 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:44:18,647 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:44:18,647 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:44:18,648 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:44:18,648 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:44:18,648 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:44:18,648 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:44:18,648 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:44:18,648 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:44:18,648 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:44:18,648 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:44:18,648 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:44:18,648 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:44:18,648 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:44:18,648 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:44:18,648 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:44:18,648 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:44:18,648 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:44:18,648 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:44:18,649 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:44:18,649 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:44:18,649 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:44:18,649 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:44:18,649 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:44:18,649 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:44:18,650 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:44:18,650 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:44:18,650 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:44:18,656 [INFO] ApiDbMcu:532 - Load IP Config File for PDM2PCM
+2026-04-16 15:44:18,719 [INFO] CADModel:165 - CPN selected for project levelSTM32F446RET6
+2026-04-16 15:44:18,719 [INFO] CADModel:114 - Register for checkConnection events
+2026-04-16 15:44:18,760 [INFO] OpenFileManager:386 - Restore cursor
+2026-04-16 15:44:19,550 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 319411792 Bytes (628097024)
+2026-04-16 15:44:19,627 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 341954128 Bytes (628097024)
+2026-04-16 15:44:19,660 [ERROR] ConfigurationRetriever:142 - IOException on connection: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+2026-04-16 15:44:19,705 [ERROR] ConfigurationRetriever:142 - IOException on connection: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+2026-04-16 15:44:19,746 [ERROR] ConfigurationRetriever:142 - IOException on connection: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+2026-04-16 15:44:20,410 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: RCC
+2026-04-16 15:44:20,416 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: NVIC
+2026-04-16 15:44:20,419 [INFO] CodeGenerator:892 - code generatio: config db path: /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.common.mx_6.15.0.202507011659//db/
+2026-04-16 15:44:20,547 [INFO] CodeEngine:265 - oldGeneratedFile, /Users/ggpai/Desktop/DMA/workspace/LED_TOOGLE_DMA_IT/MXTmpFiles/license.tmp_save
+2026-04-16 15:44:20,876 [INFO] CodeEngine:289 - Generated code: /Users/ggpai/Desktop/DMA/workspace/LED_TOOGLE_DMA_IT/MXTmpFiles/license.tmp
+2026-04-16 15:44:20,892 [INFO] CodeEngine:265 - oldGeneratedFile, /Users/ggpai/Desktop/DMA/workspace/LED_TOOGLE_DMA_IT/Core/Src/stm32f4xx_it.c_save
+2026-04-16 15:44:21,108 [INFO] CodeEngine:289 - Generated code: /Users/ggpai/Desktop/DMA/workspace/LED_TOOGLE_DMA_IT/Core/Src/stm32f4xx_it.c
+2026-04-16 15:44:21,112 [INFO] CodeEngine:265 - oldGeneratedFile, /Users/ggpai/Desktop/DMA/workspace/LED_TOOGLE_DMA_IT/Core/Inc/stm32f4xx_it.h_save
+2026-04-16 15:44:21,214 [INFO] CodeEngine:289 - Generated code: /Users/ggpai/Desktop/DMA/workspace/LED_TOOGLE_DMA_IT/Core/Inc/stm32f4xx_it.h
+2026-04-16 15:44:21,273 [INFO] CodeEngine:265 - oldGeneratedFile, /Users/ggpai/Desktop/DMA/workspace/LED_TOOGLE_DMA_IT/Core/Src/stm32f4xx_hal_msp.c_save
+2026-04-16 15:44:21,457 [INFO] CodeEngine:289 - Generated code: /Users/ggpai/Desktop/DMA/workspace/LED_TOOGLE_DMA_IT/Core/Src/stm32f4xx_hal_msp.c
+2026-04-16 15:44:21,460 [INFO] CodeEngine:265 - oldGeneratedFile, /Users/ggpai/Desktop/DMA/workspace/LED_TOOGLE_DMA_IT/MXTmpFiles/system.tmp_save
+2026-04-16 15:44:21,518 [INFO] CodeEngine:289 - Generated code: /Users/ggpai/Desktop/DMA/workspace/LED_TOOGLE_DMA_IT/MXTmpFiles/system.tmp
+2026-04-16 15:44:21,528 [INFO] CodeEngine:321 - oldGeneratedFile, /Users/ggpai/Desktop/DMA/workspace/LED_TOOGLE_DMA_IT/Core/Inc/stm32f4xx_hal_conf.h_save
+2026-04-16 15:44:21,613 [INFO] CodeEngine:345 - Generated code: /Users/ggpai/Desktop/DMA/workspace/LED_TOOGLE_DMA_IT/Core/Inc/stm32f4xx_hal_conf.h
+2026-04-16 15:44:21,667 [WARN] IPConfigManager:3238 - Warning: the RefConfig PLL2P_FOR_MCO is not available in your config.xml file
+2026-04-16 15:44:21,675 [INFO] ApiDbMcu:532 - Load IP Config File for RCC
+2026-04-16 15:44:21,683 [INFO] CodeEngine:265 - oldGeneratedFile, /Users/ggpai/Desktop/DMA/workspace/LED_TOOGLE_DMA_IT/Core/Inc/main.h_save
+2026-04-16 15:44:21,829 [INFO] CodeEngine:289 - Generated code: /Users/ggpai/Desktop/DMA/workspace/LED_TOOGLE_DMA_IT/Core/Inc/main.h
+2026-04-16 15:44:21,832 [INFO] CodeEngine:265 - oldGeneratedFile, /Users/ggpai/Desktop/DMA/workspace/LED_TOOGLE_DMA_IT/Core/Src/main.c_save
+2026-04-16 15:44:21,945 [INFO] CodeEngine:289 - Generated code: /Users/ggpai/Desktop/DMA/workspace/LED_TOOGLE_DMA_IT/Core/Src/main.c
+2026-04-16 15:44:22,173 [INFO] ProjectBuilder:3606 - Time for Copy HAL[1] : 96mS.
+2026-04-16 15:44:22,178 [INFO] ProjectBuilder:5216 - Project Generator version: 4.7.0-B52
+2026-04-16 15:44:22,253 [INFO] ConfigFileManager:1595 - The Die is : DIE421
+2026-04-16 15:44:22,260 [INFO] ApiDbMcu:532 - Load IP Config File for FATFS
+2026-04-16 15:44:22,266 [INFO] ApiDbMcu:532 - Load IP Config File for FREERTOS
+2026-04-16 15:44:22,268 [INFO] ApiDbMcu:532 - Load IP Config File for LIBJPEG
+2026-04-16 15:44:22,274 [INFO] ApiDbMcu:532 - Load IP Config File for MBEDTLS
+2026-04-16 15:44:22,283 [INFO] ApiDbMcu:532 - Load IP Config File for USB_DEVICE
+2026-04-16 15:44:22,295 [INFO] ApiDbMcu:532 - Load IP Config File for USB_HOST
+2026-04-16 15:44:27,169 [INFO] ProjectBuilder:5496 - Time for Generating toolchain IDE Files: 4986mS.
+2026-04-16 15:44:27,177 [INFO] ProjectBuilder:3463 - Time for Copy CMSIS : 1mS.
+2026-04-16 15:44:27,183 [INFO] ProjectBuilder:3463 - Time for Copy CMSIS : 1mS.
+2026-04-16 15:44:28,387 [ERROR] ConfigurationRetriever:142 - IOException on connection: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+2026-04-16 15:44:28,450 [ERROR] ConfigurationRetriever:142 - IOException on connection: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+2026-04-16 15:44:28,507 [ERROR] ConfigurationRetriever:142 - IOException on connection: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+2026-04-16 15:44:28,614 [INFO] McuFinderGlobals:76 - Set McuFinderConnectedMode to true
+2026-04-16 15:44:28,626 [INFO] ApiDb:448 - Save user favorites file /Users/ggpai/.stm32cubeide/favorites.mcus.txt: 0 item(s)
+2026-04-16 15:44:28,627 [INFO] ApiDb:452 - User favorites MCUs=[]
+2026-04-16 15:45:02,106 [INFO] McuFinderGlobals:76 - Set McuFinderConnectedMode to false
+2026-04-16 15:45:02,114 [INFO] MultiScanPanel:200 - Auto-refresh data requested => check proxy status ongoing
+2026-04-16 15:45:02,116 [INFO] MultiScanPanel:204 - Proxy status is invalid
+2026-04-16 15:45:02,118 [INFO] FinderPluginLoader:96 - Searching for filters in installed packs
+2026-04-16 15:45:03,194 [WARN] DetailPanel:346 - Failed to get advertising image, set to default
+2026-04-16 15:45:06,553 [INFO] MultiScanPanel:200 - Auto-refresh data requested => check proxy status ongoing
+2026-04-16 15:45:06,561 [INFO] MultiScanPanel:204 - Proxy status is invalid
+2026-04-16 15:45:06,875 [WARN] DetailPanel:346 - Failed to get advertising image, set to default
+2026-04-16 15:45:06,902 [INFO] DbBoards:642 - Loading board mini-images...
+2026-04-16 15:45:08,472 [INFO] DbBoards:665 - Loaded 212 board mini-images
+2026-04-16 15:45:36,323 [INFO] MainUpdater:2872 - connection check result : 22
+2026-04-16 15:45:36,908 [INFO] MicroXplorer:468 - Change Database Path : 
+2026-04-16 15:45:36,909 [INFO] MicroXplorer:498 - Change Database Version : DB.6.0.150
+2026-04-16 15:45:37,010 [ERROR] ProjectManagerView:395 - 
+java.lang.NullPointerException: Cannot invoke "javax.swing.JTextField.getText()" because the return value of "java.util.List.get(int)" is null
+	at com.st.microxplorer.plugins.projectmanager.gui.ProjectChoiceTab$9.caretUpdate(ProjectChoiceTab.java:2706) ~[filemanager.jar:?]
+	at javax.swing.text.JTextComponent.fireCaretUpdate(JTextComponent.java:408) ~[?:?]
+	at javax.swing.text.JTextComponent$MutableCaretEvent.fire(JTextComponent.java:4484) ~[?:?]
+	at javax.swing.text.JTextComponent$MutableCaretEvent.stateChanged(JTextComponent.java:4506) ~[?:?]
+	at javax.swing.text.DefaultCaret.fireStateChanged(DefaultCaret.java:857) ~[?:?]
+	at javax.swing.text.DefaultCaret.changeCaretPosition(DefaultCaret.java:1343) ~[?:?]
+	at javax.swing.text.DefaultCaret.handleSetDot(DefaultCaret.java:1242) ~[?:?]
+	at javax.swing.text.DefaultCaret.setDot(DefaultCaret.java:1223) ~[?:?]
+	at javax.swing.text.DefaultCaret$Handler.insertUpdate(DefaultCaret.java:1819) ~[?:?]
+	at javax.swing.text.AbstractDocument.fireInsertUpdate(AbstractDocument.java:227) ~[?:?]
+	at javax.swing.text.AbstractDocument.handleInsertString(AbstractDocument.java:781) ~[?:?]
+	at javax.swing.text.AbstractDocument.insertString(AbstractDocument.java:740) ~[?:?]
+	at javax.swing.text.PlainDocument.insertString(PlainDocument.java:131) ~[?:?]
+	at javax.swing.text.AbstractDocument.replace(AbstractDocument.java:699) ~[?:?]
+	at javax.swing.text.JTextComponent.setText(JTextComponent.java:1725) ~[?:?]
+	at com.st.microxplorer.plugins.projectmanager.gui.ProjectChoiceTab.createHeapStackFields(ProjectChoiceTab.java:993) ~[filemanager.jar:?]
+	at com.st.microxplorer.plugins.projectmanager.gui.ProjectChoiceTab.buildLinkSettingsPanel(ProjectChoiceTab.java:3813) ~[filemanager.jar:?]
+	at com.st.microxplorer.plugins.projectmanager.gui.ProjectChoiceTab.defineWindowsFields(ProjectChoiceTab.java:1987) ~[filemanager.jar:?]
+	at com.st.microxplorer.plugins.projectmanager.gui.ProjectChoiceTab.updateSettings(ProjectChoiceTab.java:558) ~[filemanager.jar:?]
+	at com.st.microxplorer.plugins.projectmanager.gui.ProjectSettingsPanel.UpdateDialog(ProjectSettingsPanel.java:247) ~[filemanager.jar:?]
+	at com.st.microxplorer.plugins.projectmanager.ProjectManagerView.propertyChange(ProjectManagerView.java:392) ~[filemanager.jar:?]
+	at java.beans.PropertyChangeSupport.fire(PropertyChangeSupport.java:343) ~[?:?]
+	at java.beans.PropertyChangeSupport.firePropertyChange(PropertyChangeSupport.java:335) ~[?:?]
+	at java.beans.PropertyChangeSupport.firePropertyChange(PropertyChangeSupport.java:268) ~[?:?]
+	at com.st.microxplorer.util.MXPropertyChangeSupport.firePropertyChange(MXPropertyChangeSupport.java:54) ~[STM32CubeMX.jar:?]
+	at com.st.microxplorer.mxsystem.MxSystem.closeConfig(MxSystem.java:899) ~[STM32CubeMX.jar:?]
+	at com.st.microxplorer.maingui.MainPanel.closeConfig(MainPanel.java:792) ~[STM32CubeMX.jar:?]
+	at com.st.microxplorer.plugins.filemanager.engine.OpenFileManager.loadConfigurationFile(OpenFileManager.java:288) ~[filemanager.jar:?]
+	at com.st.microxplorer.plugins.filemanager.engine.MainFileManager.userLoadConfig(MainFileManager.java:364) ~[filemanager.jar:?]
+	at com.st.microxplorer.plugins.filemanager.FileManagerView.getSpecificTask(FileManagerView.java:268) ~[filemanager.jar:?]
+	at com.st.stm32cube.common.mx.editor.CubeMxEditor.getMxTabbedPaneInstance(CubeMxEditor.java:1191) ~[com.st.stm32cube.common.mx_6.15.0.202507011659/:?]
+	at com.st.stm32cube.common.mx.editor.CubeMxEditor$12$1.createSwingComponent(CubeMxEditor.java:1068) ~[com.st.stm32cube.common.mx_6.15.0.202507011659/:?]
+	at com.st.stm32cube.common.mx.oss.core.awtswtbridge.EmbeddedSwingComposite.doComponentCreation(EmbeddedSwingComposite.java:492) ~[com.st.stm32cube.common.mx.oss_6.15.0.202507011659/:?]
+	at com.st.stm32cube.common.mx.oss.core.awtswtbridge.EmbeddedSwingComposite$4.run(EmbeddedSwingComposite.java:291) ~[com.st.stm32cube.common.mx.oss_6.15.0.202507011659/:?]
+	at com.st.stm32cube.common.mx.oss.core.awtswtbridge.AwtEnvironment$2.run(AwtEnvironment.java:166) ~[com.st.stm32cube.common.mx.oss_6.15.0.202507011659/:?]
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:318) ~[?:?]
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:773) ~[?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:720) ~[?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:714) ~[?:?]
+	at java.security.AccessController.doPrivileged(AccessController.java:400) ~[?:?]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87) ~[?:?]
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:742) ~[?:?]
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203) ~[?:?]
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124) ~[?:?]
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113) ~[?:?]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109) ~[?:?]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101) ~[?:?]
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:90) ~[?:?]
+2026-04-16 15:45:37,012 [WARN] ThirdParty:871 - waiting for thirdparty lock release [close project]
+2026-04-16 15:45:37,013 [INFO] ThirdParty:873 - entering critical section [close project]
+2026-04-16 15:45:37,013 [INFO] ThirdParty:883 - exiting critical section [close project]
+2026-04-16 15:45:37,016 [INFO] PinOutPanel:1589 - setPackage(No Configuration,No Configuration)
+2026-04-16 15:45:37,057 [WARN] IpParametersView:155 - Warning: This peripheral hasn't parameters
+2026-04-16 15:45:37,093 [WARN] MainPanel:289 - <html><b><center>Warning: This peripheral has no parameters to be configured<br></b></html>
+2026-04-16 15:45:37,098 [INFO] UtilMem:75 - Begin LoadConfig() Used Memory: 628762832 Bytes (968884224)
+2026-04-16 15:45:37,099 [INFO] OpenFileManager:355 - Change cursor
+2026-04-16 15:45:37,159 [INFO] RulesReader:64 - Compatibility file has been processed (317 Rules)
+2026-04-16 15:45:37,177 [INFO] ProjectFactory:514 - No CPN specified for board NUCLEO-F446RE => set CPN to STM32F446RET6
+2026-04-16 15:45:37,177 [INFO] Mcu:2029 - Initializing MCU STM32F446R(C-E)Tx STM32F446RETx STM32F446RET6
+2026-04-16 15:45:38,591 [INFO] Context:786 - Trying to add GPIOservice into a context  which must be forbidden
+2026-04-16 15:45:39,221 [INFO] Rule:233 - rule 117617 - U5Cobra4M][GTZC] default value MPCBB3 and MPCBB5 - Not Secured memory - MPCBB1 is applicable
+2026-04-16 15:45:39,223 [INFO] Rule:233 - rule 117617 - U5Cobra4M][GTZC] default value MPCBB3 and MPCBB5 - Not Secured memory - MPCBB1 is applicable
+2026-04-16 15:45:39,223 [INFO] Rule:233 - rule 117617 - U5Cobra4M][GTZC] default value MPCBB3 and MPCBB5 - Not Secured memory - MPCBB2 is applicable
+2026-04-16 15:45:39,223 [INFO] Rule:233 - rule 117617 - U5Cobra4M][GTZC] default value MPCBB3 and MPCBB5 - Not Secured memory - MPCBB2 is applicable
+2026-04-16 15:45:39,223 [INFO] Rule:233 - rule 117617 - U5Cobra4M][GTZC] default value MPCBB3 and MPCBB5 - Not Secured memory - MPCBB3 is applicable
+2026-04-16 15:45:39,223 [INFO] Rule:233 - rule 117617 - U5Cobra4M][GTZC] default value MPCBB3 and MPCBB5 - Not Secured memory - MPCBB3 is applicable
+2026-04-16 15:45:39,223 [INFO] Rule:233 - rule 117617 - U5Cobra4M][GTZC] default value MPCBB3 and MPCBB5 - Not Secured memory - MPCBB4 is applicable
+2026-04-16 15:45:39,223 [INFO] Rule:233 - rule 117617 - U5Cobra4M][GTZC] default value MPCBB3 and MPCBB5 - Not Secured memory - MPCBB4 is applicable
+2026-04-16 15:45:39,223 [INFO] Rule:233 - rule 117617 - U5Cobra4M][GTZC] default value MPCBB3 and MPCBB5 - Secured memory - MPCBB1 is applicable
+2026-04-16 15:45:39,223 [INFO] Rule:233 - rule 117617 - U5Cobra4M][GTZC] default value MPCBB3 and MPCBB5 - Secured memory - MPCBB2 is applicable
+2026-04-16 15:45:39,223 [INFO] Rule:233 - rule 117617 - U5Cobra4M][GTZC] default value MPCBB3 and MPCBB5 - Secured memory - MPCBB3 is applicable
+2026-04-16 15:45:39,223 [INFO] Rule:233 - rule 117617 - U5Cobra4M][GTZC] default value MPCBB3 and MPCBB5 - Secured memory - MPCBB4 is applicable
+2026-04-16 15:45:39,223 [INFO] Rule:233 - rule 117617 - U5Cobra4M][GTZC] default value MPCBB3 and MPCBB5 - Privileged memory - MPCBB1 is applicable
+2026-04-16 15:45:39,223 [INFO] Rule:233 - rule 117617 - U5Cobra4M][GTZC] default value MPCBB3 and MPCBB5 - Privileged memory - MPCBB2 is applicable
+2026-04-16 15:45:39,224 [INFO] Rule:233 - rule 117617 - U5Cobra4M][GTZC] default value MPCBB3 and MPCBB5 - Privileged memory - MPCBB3 is applicable
+2026-04-16 15:45:39,224 [INFO] Rule:233 - rule 117617 - U5Cobra4M][GTZC] default value MPCBB3 and MPCBB5 - Privileged memory - MPCBB4 is applicable
+2026-04-16 15:45:39,224 [INFO] Rule:233 - rule 117617 - U5Cobra4M][GTZC] default value MPCBB3 and MPCBB5 - Not Privileged memory - MPCBB1 is applicable
+2026-04-16 15:45:39,224 [INFO] Rule:233 - rule 117617 - U5Cobra4M][GTZC] default value MPCBB3 and MPCBB5 - Not Privileged memory - MPCBB2 is applicable
+2026-04-16 15:45:39,224 [INFO] Rule:233 - rule 117617 - U5Cobra4M][GTZC] default value MPCBB3 and MPCBB5 - Not Privileged memory - MPCBB3 is applicable
+2026-04-16 15:45:39,224 [INFO] Rule:233 - rule 117617 - U5Cobra4M][GTZC] default value MPCBB3 and MPCBB5 - Not Privileged memory - MPCBB4 is applicable
+2026-04-16 15:45:39,224 [INFO] Rule:233 - rule 117617 - U5Cobra4M][GTZC] default value MPCBB3 and MPCBB5 - Privileged memory - MPCBB1 is applicable
+2026-04-16 15:45:39,224 [INFO] Rule:233 - rule 117617 - U5Cobra4M][GTZC] default value MPCBB3 and MPCBB5 - Privileged memory - MPCBB2 is applicable
+2026-04-16 15:45:39,224 [INFO] Rule:233 - rule 117617 - U5Cobra4M][GTZC] default value MPCBB3 and MPCBB5 - Privileged memory - MPCBB3 is applicable
+2026-04-16 15:45:39,224 [INFO] Rule:233 - rule 117617 - U5Cobra4M][GTZC] default value MPCBB3 and MPCBB5 - Privileged memory - MPCBB4 is applicable
+2026-04-16 15:45:39,224 [INFO] Rule:233 - rule 117617 - U5Cobra4M][GTZC] default value MPCBB3 and MPCBB5 - Privileged memory - MPCBB1 is applicable
+2026-04-16 15:45:39,224 [INFO] Rule:233 - rule 117617 - U5Cobra4M][GTZC] default value MPCBB3 and MPCBB5 - Privileged memory - MPCBB2 is applicable
+2026-04-16 15:45:39,224 [INFO] Rule:233 - rule 117617 - U5Cobra4M][GTZC] default value MPCBB3 and MPCBB5 - Privileged memory - MPCBB3 is applicable
+2026-04-16 15:45:39,224 [INFO] Rule:233 - rule 117617 - U5Cobra4M][GTZC] default value MPCBB3 and MPCBB5 - Privileged memory - MPCBB4 is applicable
+2026-04-16 15:45:39,224 [INFO] Rule:233 - rule 117617 - U5Cobra4M][GTZC] default value MPCBB3 and MPCBB5 - Not Privileged memory - MPCBB1 is applicable
+2026-04-16 15:45:39,224 [INFO] Rule:233 - rule 117617 - U5Cobra4M][GTZC] default value MPCBB3 and MPCBB5 - Not Privileged memory - MPCBB2 is applicable
+2026-04-16 15:45:39,224 [INFO] Rule:233 - rule 117617 - U5Cobra4M][GTZC] default value MPCBB3 and MPCBB5 - Not Privileged memory - MPCBB3 is applicable
+2026-04-16 15:45:39,224 [INFO] Rule:233 - rule 117617 - U5Cobra4M][GTZC] default value MPCBB3 and MPCBB5 - Not Privileged memory - MPCBB4 is applicable
+2026-04-16 15:45:39,224 [INFO] Rule:233 - rule 117617 - U5Cobra4M][GTZC] default value MPCBB3 and MPCBB5 - Privileged memory - MPCBB1 is applicable
+2026-04-16 15:45:39,224 [INFO] Rule:233 - rule 117617 - U5Cobra4M][GTZC] default value MPCBB3 and MPCBB5 - Privileged memory - MPCBB2 is applicable
+2026-04-16 15:45:39,224 [INFO] Rule:233 - rule 117617 - U5Cobra4M][GTZC] default value MPCBB3 and MPCBB5 - Privileged memory - MPCBB3 is applicable
+2026-04-16 15:45:39,224 [INFO] Rule:233 - rule 117617 - U5Cobra4M][GTZC] default value MPCBB3 and MPCBB5 - Privileged memory - MPCBB4 is applicable
+2026-04-16 15:45:39,224 [INFO] Rule:233 - rule Rename SubGHz_Phy SUBGHZ_APPLICATION SUBGHZ_PINGPONG to SUBGHZ_ADV_APPLICATION is applicable
+2026-04-16 15:45:39,224 [INFO] Rule:233 - rule Rename Enabled to IBEACON is applicable
+2026-04-16 15:45:39,224 [INFO] Rule:233 - rule GTZC_S instance for project manager is applicable
+2026-04-16 15:45:39,224 [INFO] Rule:233 - rule GTZC_S instance for context M33S is applicable
+2026-04-16 15:45:39,224 [INFO] Rule:233 - rule GTZC_S instance value for IP GTZC is applicable
+2026-04-16 15:45:39,224 [INFO] Rule:233 - rule GTZC_S instance for mcu.IP is applicable
+2026-04-16 15:45:39,224 [INFO] Rule:233 - rule GTZC_S instance for VP is applicable
+2026-04-16 15:45:39,224 [INFO] Rule:233 - rule GTZC_S instance for signal is applicable
+2026-04-16 15:45:39,224 [INFO] Rule:233 - rule GTZC_S instance for mcu.Pin is applicable
+2026-04-16 15:45:39,224 [INFO] Rule:233 - rule GTZC_S instance for VP is applicable
+2026-04-16 15:45:39,224 [INFO] Rule:233 - rule GTZC_S instance for signal is applicable
+2026-04-16 15:45:39,224 [INFO] Rule:233 - rule GTZC_S instance for mcu is applicable
+2026-04-16 15:45:39,224 [INFO] Rule:233 - rule GTZC_S instance for mcu.Pin is applicable
+2026-04-16 15:45:39,224 [INFO] Rule:233 - rule GTZC_S instance value for IP GTZC is applicable
+2026-04-16 15:45:39,224 [INFO] Rule:233 - rule GTZC_S instance for project manager is applicable
+2026-04-16 15:45:39,224 [INFO] Rule:233 - rule GTZC_S instance for context M33S is applicable
+2026-04-16 15:45:39,224 [INFO] Rule:233 - rule GTZC_S instance for VP is applicable
+2026-04-16 15:45:39,224 [INFO] Rule:233 - rule GTZC_S instance for signal is applicable
+2026-04-16 15:45:39,224 [INFO] Rule:233 - rule SPDIFRX instance for mcu is applicable
+2026-04-16 15:45:39,224 [INFO] Rule:233 - rule Rename Tracer Mode is applicable
+2026-04-16 15:45:39,224 [INFO] Rule:233 - rule SPDIFRX instance value for IP SPDIFRX is applicable
+2026-04-16 15:45:39,224 [INFO] Rule:233 - rule SPDIFRX instance for signal is applicable
+2026-04-16 15:45:39,224 [INFO] Rule:233 - rule SPDIFRX instance for project manager is applicable
+2026-04-16 15:45:39,225 [INFO] Rule:233 - rule SPDIFRX instance for project manager is applicable
+2026-04-16 15:45:39,225 [INFO] Rule:233 - rule ADC Scan  fix with FW F7 is applicable
+2026-04-16 15:45:39,225 [INFO] Rule:233 - rule ADC Scan  fix with FW F7 is applicable
+2026-04-16 15:45:39,225 [INFO] Rule:233 - rule DFSDM instance value for IP DFSDM is applicable
+2026-04-16 15:45:39,225 [INFO] Rule:233 - rule DFSDM instance for mcu is applicable
+2026-04-16 15:45:39,225 [INFO] Rule:233 - rule DFSDM instance for VP is applicable
+2026-04-16 15:45:39,225 [INFO] Rule:233 - rule DFSDM instance for signal is applicable
+2026-04-16 15:45:39,225 [INFO] Rule:233 - rule DFSDM instance for shared is applicable
+2026-04-16 15:45:39,225 [INFO] Rule:233 - rule BreakInputSource parameter for IP Timer is applicable
+2026-04-16 15:45:39,225 [INFO] Rule:233 - rule Sourcebreak parameter for IP Timer is applicable
+2026-04-16 15:45:39,225 [INFO] Rule:233 - rule Sourcebreak parameter for IP Timer is applicable
+2026-04-16 15:45:39,225 [INFO] Rule:233 - rule DFSDM for PCC is applicable
+2026-04-16 15:45:39,225 [INFO] Rule:233 - rule Serial_Wire Mode is applicable
+2026-04-16 15:45:39,225 [INFO] Rule:233 - rule JTAG_4_pins Mode is applicable
+2026-04-16 15:45:39,225 [INFO] Rule:233 - rule JTAG_5_pins Mode is applicable
+2026-04-16 15:45:39,225 [INFO] Rule:233 - rule Trace_Asynchronous_SW Mode is applicable
+2026-04-16 15:45:39,225 [INFO] Rule:233 - rule Trace_Synchro_1bit_JTAG Mode is applicable
+2026-04-16 15:45:39,225 [INFO] Rule:233 - rule Trace_Synchro_2bits_JTAG Mode is applicable
+2026-04-16 15:45:39,225 [INFO] Rule:233 - rule Trace_Synchro_4bits_JTAG Mode is applicable
+2026-04-16 15:45:39,225 [INFO] Rule:233 - rule Trace_Synchro_1bit_SW Mode is applicable
+2026-04-16 15:45:39,225 [INFO] Rule:233 - rule Trace_Synchro_2bits_SW Mode is applicable
+2026-04-16 15:45:39,225 [INFO] Rule:233 - rule Trace_Synchro_4bits_SW Mode is applicable
+2026-04-16 15:45:39,225 [INFO] Rule:233 - rule SYS_WakeUp0 Mode is applicable
+2026-04-16 15:45:39,225 [INFO] Rule:233 - rule SYS_WakeUp0 Mode for STM32F446 is applicable
+2026-04-16 15:45:39,225 [INFO] Rule:233 - rule SYS_WakeUp1 Mode is applicable
+2026-04-16 15:45:39,225 [INFO] Rule:233 - rule SYS_WakeUp1 Mode for STM32F446 is applicable
+2026-04-16 15:45:39,225 [INFO] Rule:233 - rule SYS_WakeUp2 Mode is applicable
+2026-04-16 15:45:39,225 [INFO] Rule:233 - rule SYS_WakeUp3 Mode is applicable
+2026-04-16 15:45:39,225 [INFO] Rule:233 - rule SYS_WakeUp4 Mode is applicable
+2026-04-16 15:45:39,225 [INFO] Rule:233 - rule SYS_WakeUp5 Mode is applicable
+2026-04-16 15:45:39,225 [INFO] Rule:233 - rule SYS_WakeUp6 Mode is applicable
+2026-04-16 15:45:39,225 [INFO] Rule:233 - rule SYS_WakeUp7 Mode is applicable
+2026-04-16 15:45:39,225 [INFO] Rule:233 - rule WakeUp0 Mode is applicable
+2026-04-16 15:45:39,225 [INFO] Rule:233 - rule WakeUp0 SIGNAL is applicable
+2026-04-16 15:45:39,225 [INFO] Rule:233 - rule WakeUp1 Mode is applicable
+2026-04-16 15:45:39,225 [INFO] Rule:233 - rule WakeUp1 SIGNAL is applicable
+2026-04-16 15:45:39,225 [INFO] Rule:233 - rule WakeUp2 Mode is applicable
+2026-04-16 15:45:39,225 [INFO] Rule:233 - rule WakeUp2 SIGNAL is applicable
+2026-04-16 15:45:39,225 [INFO] Rule:233 - rule WakeUp4 Mode is applicable
+2026-04-16 15:45:39,225 [INFO] Rule:233 - rule WakeUp4 SIGNAL is applicable
+2026-04-16 15:45:39,225 [INFO] Rule:233 - rule WakeUp5 Mode is applicable
+2026-04-16 15:45:39,225 [INFO] Rule:233 - rule WakeUp5 SIGNAL is applicable
+2026-04-16 15:45:39,225 [INFO] Rule:233 - rule Mode_PVD_Ext is applicable
+2026-04-16 15:45:39,225 [INFO] Rule:233 - rule Mode_PVD_Int is applicable
+2026-04-16 15:45:39,225 [INFO] Rule:233 - rule Add RTC Activate Clock Source is applicable
+2026-04-16 15:45:39,225 [INFO] Rule:233 - rule Add RTC Activate Calendar 1 is applicable
+2026-04-16 15:45:39,225 [INFO] Rule:233 - rule Add RTC Activate Calendar 2 is applicable
+2026-04-16 15:45:39,226 [INFO] Rule:233 - rule Add RTC Activate Calendar 3 is applicable
+2026-04-16 15:45:39,226 [INFO] Rule:233 - rule UART/USART TX Mode is applicable
+2026-04-16 15:45:39,226 [INFO] Rule:233 - rule UART/USART RX Mode is applicable
+2026-04-16 15:45:39,226 [INFO] Rule:233 - rule UART/USART RX TX Mode is applicable
+2026-04-16 15:45:39,226 [INFO] Rule:233 - rule UART/USART PARITY NONE is applicable
+2026-04-16 15:45:39,226 [INFO] Rule:233 - rule UART/USART PARITY EVEN is applicable
+2026-04-16 15:45:39,226 [INFO] Rule:233 - rule UART/USART PARITY ODD is applicable
+2026-04-16 15:45:39,226 [INFO] Rule:233 - rule USART StopBits 1 is applicable
+2026-04-16 15:45:39,226 [INFO] Rule:233 - rule USART StopBits 2 is applicable
+2026-04-16 15:45:39,227 [INFO] Rule:233 - rule USART StopBits 1.5 is applicable
+2026-04-16 15:45:39,228 [INFO] Rule:233 - rule USART StopBits 0.5 is applicable
+2026-04-16 15:45:39,229 [INFO] Rule:233 - rule UART/USART WORD LENGTH 7 is applicable
+2026-04-16 15:45:39,229 [INFO] Rule:233 - rule UART/USART WORD LENGTH 8 is applicable
+2026-04-16 15:45:39,229 [INFO] Rule:233 - rule UART/USART WORD LENGTH 9 is applicable
+2026-04-16 15:45:39,229 [INFO] Rule:233 - rule Rename FMC NAND NCE signal is applicable
+2026-04-16 15:45:39,229 [INFO] Rule:233 - rule Rename FMC NAND INT signal is applicable
+2026-04-16 15:45:39,230 [INFO] Rule:233 - rule Change Default Value for LSE Drive Capability for WB family is applicable
+2026-04-16 15:45:39,230 [INFO] Rule:233 - rule Change Default Value for ADC Clock Prescaler G0 family is applicable
+2026-04-16 15:45:39,230 [INFO] Rule:233 - rule Change Default Value for ADC ExternalTrigConv L4 family is applicable
+2026-04-16 15:45:39,230 [INFO] Rule:233 - rule Change Default Value for ADC ExternalTrigInjecConv L4 family is applicable
+2026-04-16 15:45:39,230 [INFO] Rule:233 - rule Change Default Value for ADC ExternalTrigConv F3 family is applicable
+2026-04-16 15:45:39,230 [INFO] Rule:233 - rule Change Default Value for ADC ExternalTrigInjecConv F3 family is applicable
+2026-04-16 15:45:39,230 [INFO] Rule:233 - rule Change Default Value for ADC ExternalTrigConv Goldfish serie is applicable
+2026-04-16 15:45:39,230 [INFO] Rule:233 - rule Change Default Value for ADC ExternalTrigInjecConv Goldfish serie is applicable
+2026-04-16 15:45:39,230 [INFO] Rule:233 - rule Change Default Value for ADC ExternalTrigConv L0 family is applicable
+2026-04-16 15:45:39,230 [INFO] Rule:233 - rule Change Default Value for ADC ExternalTrigConv F0 family is applicable
+2026-04-16 15:45:39,230 [INFO] Rule:233 - rule Change Default Value for ADC ExternalTrigConvn L1 family is applicable
+2026-04-16 15:45:39,230 [INFO] Rule:233 - rule Change Default Value for ADC ExternalTrigInjecConv L1 family is applicable
+2026-04-16 15:45:39,230 [INFO] Rule:233 - rule Change Default Value for ADC ExternalTrigConv F1 family is applicable
+2026-04-16 15:45:39,230 [INFO] Rule:233 - rule Change Default Value for ADC ExternalTrigInjecConv F1 family is applicable
+2026-04-16 15:45:39,230 [INFO] Rule:233 - rule Change Default Value for ADC ExternalTrigConv F7 family is applicable
+2026-04-16 15:45:39,230 [INFO] Rule:233 - rule Change Default Value for ADC ExternalTrigInjecConv F7 family is applicable
+2026-04-16 15:45:39,230 [INFO] Rule:233 - rule Change Default Value for ADC ExternalTrigConv F4 and F2 family is applicable
+2026-04-16 15:45:39,230 [INFO] Rule:233 - rule Change Default Value for ADC ExternalTrigInjecConv F4 and F2 family is applicable
+2026-04-16 15:45:39,230 [INFO] Rule:233 - rule ADC SamplingTime fix with FW L0  is applicable
+2026-04-16 15:45:39,230 [INFO] Rule:233 - rule ADC SamplingTime fix with FW L0  is applicable
+2026-04-16 15:45:39,230 [INFO] Rule:233 - rule ADC SamplingTime fix with FW L0 is applicable
+2026-04-16 15:45:39,230 [INFO] Rule:233 - rule ADC SamplingTime fix with FW L0 is applicable
+2026-04-16 15:45:39,230 [INFO] Rule:233 - rule ADC SamplingTime fix with FW L0  is applicable
+2026-04-16 15:45:39,230 [INFO] Rule:233 - rule ADC SamplingTime fix with FW L0 is applicable
+2026-04-16 15:45:39,230 [INFO] Rule:233 - rule Rename USB_OE Signal is applicable
+2026-04-16 15:45:39,230 [INFO] Rule:233 - rule Rename Activate_OE Mode is applicable
+2026-04-16 15:45:39,230 [INFO] Rule:233 - rule Rename DIE462/DIE415 pin PC14/OSC32_IN -> PC14-OSC32_IN (PC14) is applicable
+2026-04-16 15:45:39,230 [INFO] Rule:233 - rule Rename DIE462/DIE415 pin PC15/OSC32_OUT -> PC15-OSC32_OUT (PC15) is applicable
+2026-04-16 15:45:39,230 [INFO] Rule:233 - rule Rename DIE462/DIE415 pin PH0/OSC_IN -> PH0-OSC_IN (PH0) is applicable
+2026-04-16 15:45:39,230 [INFO] Rule:233 - rule Rename DIE462/DIE415 pin PH1/OSC_OUT -> PH1-OSC_OUT (PH1) is applicable
+2026-04-16 15:45:39,230 [INFO] Rule:233 - rule Rename DIE462 pin PA13 -> PA13 (JTMS/SWDIO) is applicable
+2026-04-16 15:45:39,230 [INFO] Rule:233 - rule Rename DIE415 pin PA13 -> PA13 (JTMS/SWDIO) is applicable
+2026-04-16 15:45:39,230 [INFO] Rule:233 - rule Rename DIE462 pin PA14 -> PA14 (JTCK/SWCLK) is applicable
+2026-04-16 15:45:39,230 [INFO] Rule:233 - rule Rename DIE415 pin PA14 -> PA14 (JTCK/SWCLK) is applicable
+2026-04-16 15:45:39,230 [INFO] Rule:233 - rule Rename DIE462/DIE415 pin PA15 -> PA15 (JTDI) is applicable
+2026-04-16 15:45:39,230 [INFO] Rule:233 - rule Rename DIE462 pin PB3 -> PB3 (JTD0/TRACESWO) is applicable
+2026-04-16 15:45:39,231 [INFO] Rule:233 - rule Rename DIE415 pin PB3 -> PB3 (JTD0-TRACESWO) is applicable
+2026-04-16 15:45:39,231 [INFO] Rule:233 - rule Rename DIE462/DIE415 pin PB4 -> PB4 (NJTRST) is applicable
+2026-04-16 15:45:39,231 [INFO] Rule:233 - rule Rename DIE462 pin PH3/BOOT0 -> PH3-BOOT0 (BOOT0) is applicable
+2026-04-16 15:45:39,231 [INFO] Rule:233 - rule Rename CRYP DataEncryptionTypesList to Algorithm is applicable
+2026-04-16 15:45:39,231 [INFO] Rule:233 - rule Rename AES DataEncryptionTypesList to Algorithm is applicable
+2026-04-16 15:45:39,231 [INFO] Rule:233 - rule Rename TDESECB to CRYP_TDES_ECB is applicable
+2026-04-16 15:45:39,231 [INFO] Rule:233 - rule Rename TDESCBC to CRYP_TDES_CBC is applicable
+2026-04-16 15:45:39,231 [INFO] Rule:233 - rule Rename DESECB to CRYP_DES_ECB is applicable
+2026-04-16 15:45:39,231 [INFO] Rule:233 - rule Rename DESCBC to CRYP_DES_CBC is applicable
+2026-04-16 15:45:39,231 [INFO] Rule:233 - rule Rename AESECB to CRYP_AES_ECB is applicable
+2026-04-16 15:45:39,231 [INFO] Rule:233 - rule Rename AESCBC to CRYP_AES_CBC is applicable
+2026-04-16 15:45:39,231 [INFO] Rule:233 - rule Rename AESCTR to CRYP_AES_CTR is applicable
+2026-04-16 15:45:39,231 [INFO] Rule:233 - rule Rename AESGCM to CRYP_AES_GCM is applicable
+2026-04-16 15:45:39,231 [INFO] Rule:233 - rule Rename AESCCM to CRYP_AES_CCM is applicable
+2026-04-16 15:45:39,231 [INFO] Rule:233 - rule Rename CAN TimeSeg1 to BS1 is applicable
+2026-04-16 15:45:39,231 [INFO] Rule:233 - rule Rename CAN TimeSeg2 to BS2 is applicable
+2026-04-16 15:45:39,231 [INFO] Rule:233 - rule Rename CAN SyncJumpWidth to SJW is applicable
+2026-04-16 15:45:39,231 [INFO] Rule:233 - rule TimeTriggeredMode to TTCM is applicable
+2026-04-16 15:45:39,231 [INFO] Rule:233 - rule Rename CAN AutoBusOff to ABOM is applicable
+2026-04-16 15:45:39,231 [INFO] Rule:233 - rule Rename CAN AutoWakeUp to AWUM is applicable
+2026-04-16 15:45:39,231 [INFO] Rule:233 - rule Rename CAN AutoRetransmission to NART is applicable
+2026-04-16 15:45:39,231 [INFO] Rule:233 - rule Rename CAN ReceiveFifoLocked to RFLM is applicable
+2026-04-16 15:45:39,231 [INFO] Rule:233 - rule Rename CAN TransmitFifoPriority to TXFP is applicable
+2026-04-16 15:45:39,231 [INFO] Rule:233 - rule Rename HRTIMER HRTIM_OUTPUTFAULTLEVEL_HIGH in HRTIMER HRTIM_OUTPUTFAULTLEVEL_HIGHZ is applicable
+2026-04-16 15:45:39,231 [INFO] Rule:233 - rule Rename TIMER TIM_CLEARINPUTSOURCE_OCREFCLR in  TIMER TIM_CLEARINPUTSOURCE_NONE for F7 family is applicable
+2026-04-16 15:45:39,231 [INFO] Rule:233 - rule FDCAN_R1 - Rename FDCAN mode Master into Classic is applicable
+2026-04-16 15:45:39,231 [INFO] Rule:233 - rule FDCAN_R2 - Rename FDCAN mode Slave into Classic is applicable
+2026-04-16 15:45:39,231 [INFO] Rule:233 - rule FDCAN1_R3 - if PA10.Mode=FullDuplex, add Pin PA12 is applicable
+2026-04-16 15:45:39,231 [INFO] Rule:233 - rule FDCAN1_R3 - if PA9.Mode=FullDuplex, add Pin PA11 is applicable
+2026-04-16 15:45:39,231 [INFO] Rule:233 - rule FDCAN1_R3 - Alternatepin_1 - if PE1.Mode=FullDuplex, add Pin PB9 is applicable
+2026-04-16 15:45:39,231 [INFO] Rule:233 - rule FDCAN1_R3 - Alternatepin_1 - if PE0.Mode=FullDuplex, add Pin PB8 is applicable
+2026-04-16 15:45:39,231 [INFO] Rule:233 - rule FDCAN1_R3 - Alternatepin_2 - if PD5.Mode=FullDuplex, add Pin PD1 is applicable
+2026-04-16 15:45:39,231 [INFO] Rule:233 - rule FDCAN1_R3 - Alternatepin_2 - if PD4.Mode=FullDuplex, add Pin PD0 is applicable
+2026-04-16 15:45:39,231 [INFO] Rule:233 - rule FDCAN1_R4 - Rename Mode FullDuplex into Enable FDCAN_TXFD for pin PA10 is applicable
+2026-04-16 15:45:39,231 [INFO] Rule:233 - rule FDCAN1_R4 - Rename Mode FullDuplex into Enable FDCAN_TXFD for pin PA9 is applicable
+2026-04-16 15:45:39,231 [INFO] Rule:233 - rule FDCAN1_R4 - Alternatepin_1 - Rename Mode FullDuplex into Enable FDCAN_TXFD for pin PE1 is applicable
+2026-04-16 15:45:39,231 [INFO] Rule:233 - rule FDCAN1_R4 - Alternatepin_1 - Rename Mode FullDuplex into Enable FDCAN_TXFD for pin PE0 is applicable
+2026-04-16 15:45:39,231 [INFO] Rule:233 - rule FDCAN1_R4 - Alternatepin_2 - Rename Mode FullDuplex into Enable FDCAN_TXFD for pin PD5 is applicable
+2026-04-16 15:45:39,231 [INFO] Rule:233 - rule FDCAN1_R4 - Alternatepin_2 - Rename Mode FullDuplex into Enable FDCAN_TXFD for pin PD4 is applicable
+2026-04-16 15:45:39,231 [INFO] Rule:233 - rule FDCAN2_R3 - if PD10.Mode=FullDuplex, add Pin PB13 is applicable
+2026-04-16 15:45:39,231 [INFO] Rule:233 - rule FDCAN2_R3 - if PD9.Mode=FullDuplex, add Pin PB12 is applicable
+2026-04-16 15:45:39,231 [INFO] Rule:233 - rule FDCAN2_R3 - Alternatepin_1 - if PB7.Mode=FullDuplex, add Pin PB6 is applicable
+2026-04-16 15:45:39,231 [INFO] Rule:233 - rule FDCAN2_R3 - Alternatepin_1 - if PD9.Mode=FullDuplex, add Pin PB12 is applicable
+2026-04-16 15:45:39,231 [INFO] Rule:233 - rule FDCAN2_R4 - Rename Mode FullDuplex into Enable FDCAN_TXFD for pin PD10 is applicable
+2026-04-16 15:45:39,231 [INFO] Rule:233 - rule FDCAN2_R4 - Rename Mode FullDuplex into Enable FDCAN_TXFD for pin PD9 is applicable
+2026-04-16 15:45:39,231 [INFO] Rule:233 - rule FDCAN2_R4 - Alternatepin_1 - Rename Mode FullDuplex into Enable FDCAN_TXFD for pin PB7 is applicable
+2026-04-16 15:45:39,231 [INFO] Rule:233 - rule FDCAN2_R4 - Alternatepin_1 - Rename Mode FullDuplex into Enable FDCAN_TXFD for pin PD6 is applicable
+2026-04-16 15:45:39,231 [INFO] Rule:233 - rule USART TxPinLevelInvertParam Mode is applicable
+2026-04-16 15:45:39,232 [INFO] Rule:233 - rule USART RxPinLevelInvertParam Mode is applicable
+2026-04-16 15:45:39,232 [INFO] Rule:233 - rule USART DataInvertParam Mode is applicable
+2026-04-16 15:45:39,232 [INFO] Rule:233 - rule USART SwapParam Mode is applicable
+2026-04-16 15:45:39,232 [INFO] Rule:233 - rule USART OverrunDisableParam Mode is applicable
+2026-04-16 15:45:39,232 [INFO] Rule:233 - rule USART DMADisableonRxErrorParam Mode is applicable
+2026-04-16 15:45:39,232 [INFO] Rule:233 - rule USART MSBFirstParam Mode is applicable
+2026-04-16 15:45:39,232 [INFO] Rule:233 - rule Update MwName for USB_DEVICE is applicable
+2026-04-16 15:45:39,232 [INFO] Rule:233 - rule Change PWR_Regulator_Voltage_Scale Default Value for RCC  H7 family is applicable
+2026-04-16 15:45:39,232 [INFO] Rule:233 - rule UART/USART IPParameter rename Prescaler parameter to ClockPrescaler is applicable
+2026-04-16 15:45:39,232 [INFO] Rule:233 - rule UART/USART Prescaler rename Prescaler parameter to ClockPrescaler is applicable
+2026-04-16 15:45:39,232 [INFO] Rule:233 - rule TIM1CLockSelection is applicable
+2026-04-16 15:45:39,232 [INFO] Rule:233 - rule TIM15CLockSelection is applicable
+2026-04-16 15:45:39,232 [INFO] Rule:233 - rule align RCC SDMMC3CLockSelection default value on MP1 is applicable
+2026-04-16 15:45:39,232 [INFO] Rule:233 - rule align RCC SDMMC12CLockSelection default value on MP1 is applicable
+2026-04-16 15:45:39,232 [INFO] Rule:233 - rule align RCC QSPICLockSelection default value on MP1 is applicable
+2026-04-16 15:45:39,232 [INFO] Rule:233 - rule align RCC QSPICLockSelection default value on MP1 is applicable
+2026-04-16 15:45:39,232 [INFO] Rule:233 - rule align RCC SPI6CLockSelection default value on MP1 is applicable
+2026-04-16 15:45:39,232 [INFO] Rule:233 - rule align RCC LPTIM23CLockSelection default value on MP1 is applicable
+2026-04-16 15:45:39,232 [INFO] Rule:233 - rule align RCC LPTIM1CLockSelection default value on MP1 is applicable
+2026-04-16 15:45:39,232 [INFO] Rule:233 - rule align RCC USART1CLockSelection default value on MP1 is applicable
+2026-04-16 15:45:39,232 [INFO] Rule:233 - rule align RCC USART24CLockSelection default value on MP1 is applicable
+2026-04-16 15:45:39,232 [INFO] Rule:233 - rule align RCC USART6CLockSelection default value on MP1 is applicable
+2026-04-16 15:45:39,232 [INFO] Rule:233 - rule align RCC UART78CLockSelection default value on MP1 is applicable
+2026-04-16 15:45:39,232 [INFO] Rule:233 - rule align RCC USART35CLockSelection default value on MP1 is applicable
+2026-04-16 15:45:39,232 [INFO] Rule:233 - rule align RCC SPI45CLockSelection default value on MP1 is applicable
+2026-04-16 15:45:39,232 [INFO] Rule:233 - rule align RCC I2C46CLockSelection BCLK value on MP1 is applicable
+2026-04-16 15:45:39,232 [INFO] Rule:233 - rule align RCC SPI45CLockSelection default value on MP1 is applicable
+2026-04-16 15:45:39,232 [INFO] Rule:233 - rule align RCC I2C12CLockSelection default value on MP1 is applicable
+2026-04-16 15:45:39,232 [INFO] Rule:233 - rule align RCC I2C35CLockSelection default value on MP1 is applicable
+2026-04-16 15:45:39,232 [INFO] Rule:233 - rule align RCC LPTIM45CLockSelection default value on MP1 is applicable
+2026-04-16 15:45:39,232 [INFO] Rule:233 - rule Rename DCMI PIXCK signal is applicable
+2026-04-16 15:45:39,232 [INFO] Rule:233 - rule Change Default Value for I2C46CLockSelection MP1 family is applicable
+2026-04-16 15:45:39,232 [INFO] Rule:233 - rule Change Default Value for UART for G4, G0 and WB families is applicable
+2026-04-16 15:45:39,232 [INFO] Rule:233 - rule Change Default Value for USART for G4, G0 and WB families is applicable
+2026-04-16 15:45:39,232 [INFO] Rule:233 - rule Change Default Value for USART for G4 family is applicable
+2026-04-16 15:45:39,233 [INFO] Rule:233 - rule Change USART1CLockSelection refparam name for MP1 is applicable
+2026-04-16 15:45:39,233 [INFO] Rule:233 - rule Change USART2CLockSelection refparam name for MP1 is applicable
+2026-04-16 15:45:39,234 [INFO] Rule:233 - rule Change USART3CLockSelection refparam name for MP1 is applicable
+2026-04-16 15:45:39,235 [INFO] Rule:233 - rule Change UART4CLockSelection refparam name for MP1 is applicable
+2026-04-16 15:45:39,236 [INFO] Rule:233 - rule Change UART5CLockSelection refparam name for MP1 is applicable
+2026-04-16 15:45:39,236 [INFO] Rule:233 - rule Change LPUART1CLockSelection refparam name for MP1 is applicable
+2026-04-16 15:45:39,236 [INFO] Rule:233 - rule Change LPTIM1CLockSelection refparam name for MP1 is applicable
+2026-04-16 15:45:39,236 [INFO] Rule:233 - rule Change LPTIM2CLockSelection refparam name for MP1 is applicable
+2026-04-16 15:45:39,236 [INFO] Rule:233 - rule Change RCC_MCO1Source refparam name for MP1 is applicable
+2026-04-16 15:45:39,236 [INFO] Rule:233 - rule Change LSCOSource1 refparam name for MP1 is applicable
+2026-04-16 15:45:39,236 [INFO] Rule:233 - rule Change SMPSCLockSelection refparam name for MP1 is applicable
+2026-04-16 15:45:39,236 [INFO] Rule:233 - rule Change LPTIM3CLockSelection refparam name for MP1 is applicable
+2026-04-16 15:45:39,236 [INFO] Rule:233 - rule Change MPCBB* Default Template Mode to Parameters is applicable
+2026-04-16 15:45:39,236 [INFO] Rule:233 - rule Change MPCWM* or MPCBB* Secure Mode to Parameters is applicable
+2026-04-16 15:45:39,236 [INFO] Rule:233 - rule Change MPCWM* or MPCBB* No Secure Mode to Parameters is applicable
+2026-04-16 15:45:39,236 [INFO] Rule:233 - rule Change TZSC IP Secure Mode to Parameters is applicable
+2026-04-16 15:45:39,236 [INFO] Rule:233 - rule Change TZSC IP No Secure Mode to Parameters is applicable
+2026-04-16 15:45:39,236 [INFO] Rule:233 - rule Change TZSC IP Privilege Mode to Parameters is applicable
+2026-04-16 15:45:39,236 [INFO] Rule:233 - rule Change TZSC IP No Privilege Mode to Parameters is applicable
+2026-04-16 15:45:39,236 [INFO] Rule:233 - rule Change TZIC IT Secure Mode to Parameters is applicable
+2026-04-16 15:45:39,236 [INFO] Rule:233 - rule Change TZIC IT No Secure Mode to Parameters is applicable
+2026-04-16 15:45:39,236 [INFO] Rule:233 - rule Add MPCBB1_NonSecureArea_Start_Address value with referenced to MPCBB1_NonSecureArea_Start value is applicable
+2026-04-16 15:45:39,236 [INFO] Rule:233 - rule Add MPCBB2_NonSecureArea_Start_Address value with referenced to MPCBB2_NonSecureArea_Start value is applicable
+2026-04-16 15:45:39,236 [INFO] Rule:233 - rule Add MPCWM1_NonSecureArea*_Start_Address value with referenced to MPCWM1_NonSecureArea*_Start value is applicable
+2026-04-16 15:45:39,236 [INFO] Rule:233 - rule Add MPCWM2_NonSecureArea*_Start_Address value with referenced to MPCWM2_NonSecureArea*_Start value is applicable
+2026-04-16 15:45:39,236 [INFO] Rule:233 - rule Add MPCWM3_NonSecureArea_Start_Address value with referenced to MPCWM3_NonSecureArea_Start value is applicable
+2026-04-16 15:45:39,236 [INFO] Rule:233 - rule Change Default Value for PLL1UserDefinedConfig is applicable
+2026-04-16 15:45:39,236 [INFO] Rule:233 - rule Change GPIO_PuPd Default Value for USART in async mode is applicable
+2026-04-16 15:45:39,236 [INFO] Rule:233 - rule Change SMPSDivider Default Value is applicable
+2026-04-16 15:45:39,236 [INFO] Rule:233 - rule OPAMP is applicable
+2026-04-16 15:45:39,236 [INFO] Rule:233 - rule LPUART IPParameter rename Prescaler parameter to ClockPrescaler for STM32H7 is applicable
+2026-04-16 15:45:39,236 [INFO] Rule:233 - rule LPUART IPParameter rename Prescaler parameter to ClockPrescaler for STM32H7 is applicable
+2026-04-16 15:45:39,236 [INFO] Rule:233 - rule LPUART IPParameter rename Prescaler parameter to ClockPrescaler for STM32WB is applicable
+2026-04-16 15:45:39,236 [INFO] Rule:233 - rule LPUART IPParameter rename Prescaler parameter to ClockPrescaler for STM32WB is applicable
+2026-04-16 15:45:39,236 [INFO] Rule:233 - rule LPUART IPParameter rename Prescaler parameter to ClockPrescaler for STM32G4 is applicable
+2026-04-16 15:45:39,236 [INFO] Rule:233 - rule LPUART IPParameter rename Prescaler parameter to ClockPrescaler for STM32G4 is applicable
+2026-04-16 15:45:39,237 [INFO] Rule:233 - rule LPUART IPParameter rename Prescaler parameter to ClockPrescaler for STM32L5 is applicable
+2026-04-16 15:45:39,237 [INFO] Rule:233 - rule LPUART IPParameter rename Prescaler parameter to ClockPrescaler for STM32L5 is applicable
+2026-04-16 15:45:39,237 [INFO] Rule:233 - rule LPUART IPParameter rename Prescaler parameter to ClockPrescaler for STM32G4 is applicable
+2026-04-16 15:45:39,237 [INFO] Rule:233 - rule LPUART IPParameter rename Prescaler parameter to ClockPrescaler for STM32G4 is applicable
+2026-04-16 15:45:39,237 [INFO] Rule:233 - rule USB device lib V2.5.3 for L0 rename USBD_SUPPORT_USER_STRING parameter to USBD_SUPPORT_USER_STRING_DESC4 is applicable
+2026-04-16 15:45:39,237 [INFO] Rule:233 - rule I2SCLockSelection clock entry align is applicable
+2026-04-16 15:45:39,237 [INFO] Rule:233 - rule Assign TIMx context if used as SYS timebase is applicable
+2026-04-16 15:45:39,237 [INFO] Rule:233 - rule Change GPIO_Pu Default Value for I2C is applicable
+2026-04-16 15:45:39,237 [INFO] Rule:233 - rule Change GPIO_Pu Default Value for SMBus is applicable
+2026-04-16 15:45:39,237 [INFO] Rule:233 - rule change FDCAN default value is applicable
+2026-04-16 15:45:39,237 [INFO] Rule:233 - rule Change mode sai is applicable
+2026-04-16 15:45:39,237 [INFO] Rule:233 - rule **Change sai mode is applicable
+2026-04-16 15:45:39,237 [INFO] Rule:233 - rule Rename STM32WPAN CFG_BLE_IRK to CFG_BLE_IR is applicable
+2026-04-16 15:45:39,237 [INFO] Rule:233 - rule Rename STM32WPAN CFG_BLE_ERK to CFG_BLE_ER is applicable
+2026-04-16 15:45:39,237 [INFO] Rule:233 - rule Rename STM32WPAN CFG_BLE_IRK_HEX to CFG_BLE_IR_HEX is applicable
+2026-04-16 15:45:39,237 [INFO] Rule:233 - rule Rename STM32WPAN CFG_BLE_ERK_HEX to CFG_BLE_ER_HEX is applicable
+2026-04-16 15:45:39,237 [INFO] Rule:233 - rule Adapt Old IOC before rework replace old CORTEX_M33/CORTEX_M55 attributes by the new one. is applicable
+2026-04-16 15:45:39,237 [INFO] Rule:233 - rule Rename parametre of RCC RCC_APBDBG_DIV2 to RCC_TIMPRES_DIV2 is applicable
+2026-04-16 15:45:39,237 [INFO] Rule:233 - rule Rename DIE493 pin PA10 [PA12] -> PA10 is applicable
+2026-04-16 15:45:39,237 [INFO] Rule:233 - rule Rename DIE493 pin PA9 [PA11] -> PA9 is applicable
+2026-04-16 15:45:39,237 [INFO] Rule:233 - rule Rename DIE492 PartNumber CPN STM32WBA5MJGHx -> STM32WBA5MMGHx is applicable
+2026-04-16 15:45:39,237 [INFO] Rule:233 - rule Rename DIE492 PartNumber  Name STM32WBA5MJGHx -> STM32WBA5MMGHx is applicable
+2026-04-16 15:45:39,237 [INFO] Rule:233 - rule Rename DIE492 PartNumber UserName STM32WBA5MJGHx -> STM32WBA5MMGHx is applicable
+2026-04-16 15:45:39,237 [INFO] Rule:233 - rule Rename DIE492 PartNumber DeviceId STM32WBA5MJGHx -> STM32WBA5MMGHx is applicable
+2026-04-16 15:45:39,237 [INFO] Rule:233 - rule Adapt Old IOC CSI. is applicable
+2026-04-16 15:45:39,237 [INFO] Rule:233 - rule Adapt Old IOC DCMIPP. is applicable
+2026-04-16 15:45:39,237 [INFO] Rule:233 - rule Adapt Old IOC DCMIPP Mode Parallel. is applicable
+2026-04-16 15:45:39,237 [INFO] Rule:233 - rule Adapt Old IOC LTDC. is applicable
+2026-04-16 15:45:39,237 [INFO] Rule:233 - rule Rename STM32MP2 RIF Peripheral LTDC RIF.RISUP.LTDC_L0L1.Privilege -> RIF.RISUP.LTDC_L1L2.Privilege is applicable
+2026-04-16 15:45:39,237 [INFO] Rule:233 - rule Rename STM32MP2 RIF Peripheral LTDC RIF.RISUP.LTDC_L0L1.Privilege -> RIF.RISUP.LTDC_L1L2.Privilege is applicable
+2026-04-16 15:45:39,237 [INFO] Rule:233 - rule Rename STM32MP2 RIF Peripheral LTDC RIF.RISUP.LTDC_L0L1.Lock -> RIF.RISUP.LTDC_L1L2.Lock is applicable
+2026-04-16 15:45:39,237 [INFO] Rule:233 - rule Rename STM32MP2 RIF Peripheral LTDC RIF.RISUP.LTDC_L2.Lock -> RIF.RISUP.LTDC_L3.Lock is applicable
+2026-04-16 15:45:39,237 [INFO] Rule:233 - rule Adapt the old IOC example for updating the SYS when it is misconfigured. is applicable
+2026-04-16 15:45:39,237 [INFO] Rule:233 - rule Rename STM32C09 Mcu.Package LQFP64 -> LQFP48 is applicable
+2026-04-16 15:45:39,237 [INFO] Rule:233 - rule Adapt the old IOC example for updating the SYS when it is misconfigured. is applicable
+2026-04-16 15:45:39,237 [INFO] Rule:233 - rule Adapt the old IOC example for updating the SYS when it is misconfigured. is applicable
+2026-04-16 15:45:39,270 [INFO] DbConfProperties:307 - Apply Compatibility (82/313 Rules)
+2026-04-16 15:45:39,283 [INFO] ImportTextPane:234 - (OptionalMessage_ERROR) Unable to find key (Mcu.ThirdPartyNb) in loaded IOC file
+2026-04-16 15:45:39,289 [INFO] ImportTextPane:234 - (OptionalMessage_ERROR) Pin11 (VP_RIF_VS_RIF1) cannot be retrieved for this MCU
+2026-04-16 15:45:39,332 [INFO] RtosManager:558 - Registered RTOS mode: class=CMSIS, group=RTOS, mode=CMSIS_V1, owner=FREERTOS
+2026-04-16 15:45:39,333 [INFO] RtosManager:558 - Registered RTOS mode: class=CMSIS, group=RTOS2, mode=CMSIS_V2, owner=FREERTOS
+2026-04-16 15:45:39,333 [INFO] RtosManager:558 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V1, owner=FREERTOS
+2026-04-16 15:45:39,333 [INFO] RtosManager:558 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V2, owner=FREERTOS
+2026-04-16 15:45:39,333 [WARN] ModelIntegratedComponent:184 - Missing modes for component STMicroelectronics:FreeRTOS:0.0.1:STMicroelectronics:RTOS:FreeRTOS:Core:::10.2.0:
+2026-04-16 15:45:39,334 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-04-16 15:45:39,335 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-04-16 15:45:39,335 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-04-16 15:45:39,335 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-04-16 15:45:39,335 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-04-16 15:45:39,335 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-04-16 15:45:39,335 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-04-16 15:45:39,335 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-04-16 15:45:39,335 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-04-16 15:45:39,335 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-04-16 15:45:39,335 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-04-16 15:45:39,335 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-04-16 15:45:39,335 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-04-16 15:45:39,335 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-04-16 15:45:39,335 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-04-16 15:45:39,335 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-04-16 15:45:39,335 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-04-16 15:45:39,335 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-04-16 15:45:39,335 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-04-16 15:45:39,335 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-04-16 15:45:39,335 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-04-16 15:45:39,335 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-04-16 15:45:39,335 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-04-16 15:45:39,335 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-04-16 15:45:39,335 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-04-16 15:45:39,335 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-04-16 15:45:39,335 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-04-16 15:45:39,335 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-04-16 15:45:39,335 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-04-16 15:45:39,335 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-04-16 15:45:39,335 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-04-16 15:45:39,335 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-04-16 15:45:39,335 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-04-16 15:45:39,335 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-04-16 15:45:39,335 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-04-16 15:45:39,336 [WARN] ModelPack:524 - Component already loaded: STMicroelectronics:HAL Drivers:0.0.0:STMicroelectronics:Device:STMicro_Driver:XSPI:HAL::0.0.1:HAL_XSPI
+2026-04-16 15:45:39,345 [INFO] ThirdPartyModel:298 - Start build external matchings
+2026-04-16 15:45:39,349 [INFO] ThirdPartyModel:316 - End build external matchings
+2026-04-16 15:45:39,561 [INFO] UtilMem:75 - End LoadConfig() Used Memory: 577950800 Bytes (1037041664)
+2026-04-16 15:45:39,827 [WARN] ThirdParty:833 - waiting for thirdparty lock release [change project]
+2026-04-16 15:45:39,851 [INFO] ThirdParty:835 - entering critical section [change project]
+2026-04-16 15:45:39,852 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USBPD 4.1
+2026-04-16 15:45:39,852 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics ThreadX 1.0.0
+2026-04-16 15:45:39,852 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 2.0.0
+2026-04-16 15:45:39,852 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics LIBJPEG 8.0.0
+2026-04-16 15:45:39,852 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FreeRTOS 0.0.1
+2026-04-16 15:45:39,852 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 1.0.0
+2026-04-16 15:45:39,852 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics STM32_WPAN 1.0.0
+2026-04-16 15:45:39,852 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 3.0.0
+2026-04-16 15:45:39,852 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics HAL Drivers 0.0.0
+2026-04-16 15:45:39,852 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.16.2
+2026-04-16 15:45:39,852 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics ThreadX 0.0.2
+2026-04-16 15:45:39,852 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.0.3
+2026-04-16 15:45:39,852 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.1.2
+2026-04-16 15:45:39,852 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.14.1
+2026-04-16 15:45:39,852 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 1.0.0
+2026-04-16 15:45:39,852 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.1.0
+2026-04-16 15:45:39,852 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 2.0.0
+2026-04-16 15:45:39,852 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.2.0
+2026-04-16 15:45:39,852 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.3.0
+2026-04-16 15:45:39,853 [INFO] ThirdParty:841 - exiting critical section [change project]
+2026-04-16 15:45:40,340 [INFO] PinOutPanel:1589 - setPackage(No Configuration,No Configuration)
+2026-04-16 15:45:40,342 [INFO] PinOutPanel:1589 - setPackage(STM32F446RETx,LQFP64)
+2026-04-16 15:45:41,044 [INFO] UtilMem:75 - Before build in PCC Used Memory: 596483344 Bytes (1037041664)
+2026-04-16 15:45:41,650 [INFO] UtilMem:75 - After build in PCC Used Memory: 645766424 Bytes (1037041664)
+2026-04-16 15:45:41,710 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:45:41,711 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:45:41,711 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:45:41,711 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:45:41,712 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:45:41,713 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:45:41,713 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:45:41,715 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:45:41,715 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:45:41,715 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:45:41,715 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:45:41,715 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:45:41,716 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:45:41,716 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:45:41,716 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:45:41,716 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:45:41,716 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:45:41,717 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:45:41,717 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:45:41,717 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:45:41,717 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:45:41,717 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:45:41,717 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:45:41,717 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:45:41,717 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:45:41,717 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:45:41,717 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:45:41,717 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:45:41,718 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:45:41,718 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:45:41,718 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:45:41,718 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:45:41,718 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:45:41,718 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:45:41,718 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:45:41,718 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:45:41,718 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:45:41,718 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:45:41,718 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:45:41,718 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:45:41,718 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:45:41,719 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:45:41,720 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:45:41,721 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:45:41,721 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:45:41,721 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:45:41,721 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:45:41,721 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:45:41,721 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:45:41,721 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:45:41,721 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:45:41,721 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:45:41,721 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:45:41,721 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:45:41,721 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:45:41,722 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:45:41,722 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:45:41,722 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:45:41,723 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:45:41,723 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-04-16 15:45:41,736 [INFO] ApiDbMcu:532 - Load IP Config File for PDM2PCM
+2026-04-16 15:45:41,798 [INFO] CADModel:165 - CPN selected for project levelSTM32F446RET6
+2026-04-16 15:45:41,799 [INFO] CADModel:114 - Register for checkConnection events
+2026-04-16 15:45:41,850 [INFO] OpenFileManager:386 - Restore cursor
+2026-04-16 15:45:42,787 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 771602528 Bytes (1037041664)
+2026-04-16 15:45:42,868 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 793096288 Bytes (1037041664)
+2026-04-16 15:45:42,896 [ERROR] ConfigurationRetriever:142 - IOException on connection: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+2026-04-16 15:45:42,940 [ERROR] ConfigurationRetriever:142 - IOException on connection: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+2026-04-16 15:45:42,980 [ERROR] ConfigurationRetriever:142 - IOException on connection: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+2026-04-16 15:45:43,114 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: RCC
+2026-04-16 15:45:43,114 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: NVIC
+2026-04-16 15:45:43,115 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: GPIO
+2026-04-16 15:45:43,115 [INFO] CodeGenerator:892 - code generatio: config db path: /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.common.mx_6.15.0.202507011659//db/
+2026-04-16 15:45:43,226 [INFO] CodeEngine:265 - oldGeneratedFile, /Users/ggpai/Desktop/DMA/workspace/LED_TOOGLE_DMA_IT/MXTmpFiles/license.tmp_save
+2026-04-16 15:45:43,473 [INFO] CodeEngine:289 - Generated code: /Users/ggpai/Desktop/DMA/workspace/LED_TOOGLE_DMA_IT/MXTmpFiles/license.tmp
+2026-04-16 15:45:43,518 [INFO] CodeEngine:265 - oldGeneratedFile, /Users/ggpai/Desktop/DMA/workspace/LED_TOOGLE_DMA_IT/MXTmpFiles/gpio.tmp_save
+2026-04-16 15:45:43,705 [INFO] CodeEngine:289 - Generated code: /Users/ggpai/Desktop/DMA/workspace/LED_TOOGLE_DMA_IT/MXTmpFiles/gpio.tmp
+2026-04-16 15:45:43,715 [INFO] CodeEngine:265 - oldGeneratedFile, /Users/ggpai/Desktop/DMA/workspace/LED_TOOGLE_DMA_IT/Core/Src/stm32f4xx_it.c_save
+2026-04-16 15:45:43,823 [INFO] CodeEngine:289 - Generated code: /Users/ggpai/Desktop/DMA/workspace/LED_TOOGLE_DMA_IT/Core/Src/stm32f4xx_it.c
+2026-04-16 15:45:43,826 [INFO] CodeEngine:265 - oldGeneratedFile, /Users/ggpai/Desktop/DMA/workspace/LED_TOOGLE_DMA_IT/Core/Inc/stm32f4xx_it.h_save
+2026-04-16 15:45:43,914 [INFO] CodeEngine:289 - Generated code: /Users/ggpai/Desktop/DMA/workspace/LED_TOOGLE_DMA_IT/Core/Inc/stm32f4xx_it.h
+2026-04-16 15:45:43,945 [INFO] CodeEngine:265 - oldGeneratedFile, /Users/ggpai/Desktop/DMA/workspace/LED_TOOGLE_DMA_IT/Core/Src/stm32f4xx_hal_msp.c_save
+2026-04-16 15:45:44,082 [INFO] CodeEngine:289 - Generated code: /Users/ggpai/Desktop/DMA/workspace/LED_TOOGLE_DMA_IT/Core/Src/stm32f4xx_hal_msp.c
+2026-04-16 15:45:44,086 [INFO] CodeEngine:265 - oldGeneratedFile, /Users/ggpai/Desktop/DMA/workspace/LED_TOOGLE_DMA_IT/MXTmpFiles/system.tmp_save
+2026-04-16 15:45:44,181 [INFO] CodeEngine:289 - Generated code: /Users/ggpai/Desktop/DMA/workspace/LED_TOOGLE_DMA_IT/MXTmpFiles/system.tmp
+2026-04-16 15:45:44,191 [INFO] CodeEngine:321 - oldGeneratedFile, /Users/ggpai/Desktop/DMA/workspace/LED_TOOGLE_DMA_IT/Core/Inc/stm32f4xx_hal_conf.h_save
+2026-04-16 15:45:44,278 [INFO] CodeEngine:345 - Generated code: /Users/ggpai/Desktop/DMA/workspace/LED_TOOGLE_DMA_IT/Core/Inc/stm32f4xx_hal_conf.h
+2026-04-16 15:45:44,316 [WARN] IPConfigManager:3238 - Warning: the RefConfig PLL2P_FOR_MCO is not available in your config.xml file
+2026-04-16 15:45:44,326 [INFO] ApiDbMcu:532 - Load IP Config File for RCC
+2026-04-16 15:45:44,334 [INFO] CodeEngine:265 - oldGeneratedFile, /Users/ggpai/Desktop/DMA/workspace/LED_TOOGLE_DMA_IT/Core/Inc/main.h_save
+2026-04-16 15:45:44,415 [INFO] CodeEngine:289 - Generated code: /Users/ggpai/Desktop/DMA/workspace/LED_TOOGLE_DMA_IT/Core/Inc/main.h
+2026-04-16 15:45:44,418 [INFO] CodeEngine:265 - oldGeneratedFile, /Users/ggpai/Desktop/DMA/workspace/LED_TOOGLE_DMA_IT/Core/Src/main.c_save
+2026-04-16 15:45:44,519 [INFO] CodeEngine:289 - Generated code: /Users/ggpai/Desktop/DMA/workspace/LED_TOOGLE_DMA_IT/Core/Src/main.c
+2026-04-16 15:45:44,761 [INFO] ProjectBuilder:3606 - Time for Copy HAL[1] : 118mS.
+2026-04-16 15:45:44,765 [INFO] ProjectBuilder:5216 - Project Generator version: 4.7.0-B52
+2026-04-16 15:45:44,840 [INFO] ConfigFileManager:1595 - The Die is : DIE421
+2026-04-16 15:45:44,844 [INFO] ApiDbMcu:532 - Load IP Config File for FATFS
+2026-04-16 15:45:44,854 [INFO] ApiDbMcu:532 - Load IP Config File for FREERTOS
+2026-04-16 15:45:44,857 [INFO] ApiDbMcu:532 - Load IP Config File for LIBJPEG
+2026-04-16 15:45:44,864 [INFO] ApiDbMcu:532 - Load IP Config File for MBEDTLS
+2026-04-16 15:45:44,875 [INFO] ApiDbMcu:532 - Load IP Config File for USB_DEVICE
+2026-04-16 15:45:44,878 [INFO] ApiDbMcu:532 - Load IP Config File for USB_HOST
+2026-04-16 15:45:47,559 [INFO] ProjectBuilder:5496 - Time for Generating toolchain IDE Files: 2793mS.
+2026-04-16 15:45:47,561 [INFO] ProjectBuilder:3463 - Time for Copy CMSIS : 1mS.
+2026-04-16 15:45:47,562 [INFO] ProjectBuilder:3463 - Time for Copy CMSIS : 0mS.
+2026-04-16 15:45:48,194 [ERROR] ConfigurationRetriever:142 - IOException on connection: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+2026-04-16 15:45:48,240 [ERROR] ConfigurationRetriever:142 - IOException on connection: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+2026-04-16 15:45:48,255 [INFO] McuFinderGlobals:76 - Set McuFinderConnectedMode to true
+2026-04-16 15:45:48,259 [INFO] ApiDb:448 - Save user favorites file /Users/ggpai/.stm32cubeide/favorites.mcus.txt: 0 item(s)
+2026-04-16 15:45:48,259 [INFO] ApiDb:452 - User favorites MCUs=[]
+2026-04-16 15:45:48,264 [INFO] ApiDb:448 - Save user favorites file /Users/ggpai/.stm32cubeide/favorites.boards.txt: 1 item(s)
+2026-04-16 15:45:48,264 [INFO] ApiDb:452 - User favorites Boards=[STM32F407G-DISC1]
+2026-04-16 15:45:48,900 [ERROR] ConfigurationRetriever:142 - IOException on connection: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+2026-04-16 15:46:54,582 [INFO] Gpio:278 - dependency for GPIO []
+2026-04-16 15:47:42,396 [INFO] Gpio:278 - dependency for GPIO []
+2026-04-16 15:47:47,521 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 903464840 Bytes (1073741824)
+2026-04-16 15:47:47,883 [ERROR] ConfigurationRetriever:142 - IOException on connection: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+2026-04-16 15:47:47,931 [ERROR] ConfigurationRetriever:142 - IOException on connection: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+2026-04-16 15:47:47,969 [ERROR] ConfigurationRetriever:142 - IOException on connection: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+2026-04-16 15:47:57,766 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 992593800 Bytes (1073741824)
+2026-04-16 15:47:57,893 [ERROR] ConfigurationRetriever:142 - IOException on connection: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+2026-04-16 15:47:58,336 [ERROR] ConfigurationRetriever:142 - IOException on connection: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+2026-04-16 15:47:58,616 [ERROR] ConfigurationRetriever:142 - IOException on connection: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+2026-04-16 15:47:59,057 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: RCC
+2026-04-16 15:47:59,058 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: NVIC
+2026-04-16 15:47:59,058 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: DMA
+2026-04-16 15:47:59,058 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: GPIO
+2026-04-16 15:47:59,061 [INFO] CodeGenerator:892 - code generatio: config db path: /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.common.mx_6.15.0.202507011659//db/
+2026-04-16 15:47:59,273 [INFO] CodeEngine:265 - oldGeneratedFile, /Users/ggpai/Desktop/DMA/workspace/LED_TOOGLE_DMA_IT/MXTmpFiles/license.tmp_save
+2026-04-16 15:47:59,438 [INFO] CodeEngine:289 - Generated code: /Users/ggpai/Desktop/DMA/workspace/LED_TOOGLE_DMA_IT/MXTmpFiles/license.tmp
+2026-04-16 15:47:59,481 [INFO] CodeEngine:265 - oldGeneratedFile, /Users/ggpai/Desktop/DMA/workspace/LED_TOOGLE_DMA_IT/MXTmpFiles/gpio.tmp_save
+2026-04-16 15:47:59,566 [INFO] CodeEngine:289 - Generated code: /Users/ggpai/Desktop/DMA/workspace/LED_TOOGLE_DMA_IT/MXTmpFiles/gpio.tmp
+2026-04-16 15:47:59,618 [INFO] CodeEngine:265 - oldGeneratedFile, /Users/ggpai/Desktop/DMA/workspace/LED_TOOGLE_DMA_IT/MXTmpFiles/dma.tmp_save
+2026-04-16 15:47:59,673 [INFO] CodeEngine:289 - Generated code: /Users/ggpai/Desktop/DMA/workspace/LED_TOOGLE_DMA_IT/MXTmpFiles/dma.tmp
+2026-04-16 15:47:59,676 [INFO] CodeEngine:265 - oldGeneratedFile, /Users/ggpai/Desktop/DMA/workspace/LED_TOOGLE_DMA_IT/MXTmpFiles/dma_GV.tmp_save
+2026-04-16 15:47:59,718 [INFO] CodeEngine:289 - Generated code: /Users/ggpai/Desktop/DMA/workspace/LED_TOOGLE_DMA_IT/MXTmpFiles/dma_GV.tmp
+2026-04-16 15:47:59,726 [INFO] CodeEngine:265 - oldGeneratedFile, /Users/ggpai/Desktop/DMA/workspace/LED_TOOGLE_DMA_IT/Core/Src/stm32f4xx_it.c_save
+2026-04-16 15:47:59,806 [INFO] CodeEngine:289 - Generated code: /Users/ggpai/Desktop/DMA/workspace/LED_TOOGLE_DMA_IT/Core/Src/stm32f4xx_it.c
+2026-04-16 15:47:59,810 [INFO] CodeEngine:265 - oldGeneratedFile, /Users/ggpai/Desktop/DMA/workspace/LED_TOOGLE_DMA_IT/Core/Inc/stm32f4xx_it.h_save
+2026-04-16 15:47:59,859 [INFO] CodeEngine:289 - Generated code: /Users/ggpai/Desktop/DMA/workspace/LED_TOOGLE_DMA_IT/Core/Inc/stm32f4xx_it.h
+2026-04-16 15:47:59,877 [INFO] CodeEngine:265 - oldGeneratedFile, /Users/ggpai/Desktop/DMA/workspace/LED_TOOGLE_DMA_IT/Core/Src/stm32f4xx_hal_msp.c_save
+2026-04-16 15:47:59,958 [INFO] CodeEngine:289 - Generated code: /Users/ggpai/Desktop/DMA/workspace/LED_TOOGLE_DMA_IT/Core/Src/stm32f4xx_hal_msp.c
+2026-04-16 15:47:59,959 [INFO] CodeEngine:265 - oldGeneratedFile, /Users/ggpai/Desktop/DMA/workspace/LED_TOOGLE_DMA_IT/MXTmpFiles/system.tmp_save
+2026-04-16 15:48:00,000 [INFO] CodeEngine:289 - Generated code: /Users/ggpai/Desktop/DMA/workspace/LED_TOOGLE_DMA_IT/MXTmpFiles/system.tmp
+2026-04-16 15:48:00,007 [INFO] CodeEngine:321 - oldGeneratedFile, /Users/ggpai/Desktop/DMA/workspace/LED_TOOGLE_DMA_IT/Core/Inc/stm32f4xx_hal_conf.h_save
+2026-04-16 15:48:00,061 [INFO] CodeEngine:345 - Generated code: /Users/ggpai/Desktop/DMA/workspace/LED_TOOGLE_DMA_IT/Core/Inc/stm32f4xx_hal_conf.h
+2026-04-16 15:48:00,081 [WARN] IPConfigManager:3238 - Warning: the RefConfig PLL2P_FOR_MCO is not available in your config.xml file
+2026-04-16 15:48:00,090 [INFO] CodeEngine:265 - oldGeneratedFile, /Users/ggpai/Desktop/DMA/workspace/LED_TOOGLE_DMA_IT/Core/Inc/main.h_save
+2026-04-16 15:48:00,151 [INFO] CodeEngine:289 - Generated code: /Users/ggpai/Desktop/DMA/workspace/LED_TOOGLE_DMA_IT/Core/Inc/main.h
+2026-04-16 15:48:00,154 [INFO] CodeEngine:265 - oldGeneratedFile, /Users/ggpai/Desktop/DMA/workspace/LED_TOOGLE_DMA_IT/Core/Src/main.c_save
+2026-04-16 15:48:00,233 [INFO] CodeEngine:289 - Generated code: /Users/ggpai/Desktop/DMA/workspace/LED_TOOGLE_DMA_IT/Core/Src/main.c
+2026-04-16 15:48:00,437 [INFO] ProjectBuilder:3606 - Time for Copy HAL[1] : 90mS.
+2026-04-16 15:48:00,439 [INFO] ProjectBuilder:5216 - Project Generator version: 4.7.0-B52
+2026-04-16 15:48:00,496 [INFO] ConfigFileManager:1595 - The Die is : DIE421
+2026-04-16 15:48:01,541 [INFO] ProjectBuilder:5496 - Time for Generating toolchain IDE Files: 1101mS.
+2026-04-16 15:48:01,541 [INFO] ProjectBuilder:3463 - Time for Copy CMSIS : 0mS.
+2026-04-16 15:48:01,543 [INFO] ProjectBuilder:3463 - Time for Copy CMSIS : 0mS.
+2026-04-16 15:48:01,672 [ERROR] ConfigurationRetriever:142 - IOException on connection: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+2026-04-16 15:48:01,742 [ERROR] ConfigurationRetriever:142 - IOException on connection: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+2026-04-16 15:48:01,800 [ERROR] ConfigurationRetriever:142 - IOException on connection: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+2026-04-16 16:21:08,924 [ERROR] ConfigurationRetriever:142 - IOException on connection: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+2026-04-16 16:21:08,971 [ERROR] ConfigurationRetriever:142 - IOException on connection: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+2026-04-16 16:21:09,018 [ERROR] ConfigurationRetriever:142 - IOException on connection: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+2026-04-16 16:21:19,816 [ERROR] ConfigurationRetriever:142 - IOException on connection: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+2026-04-16 16:21:19,873 [ERROR] ConfigurationRetriever:142 - IOException on connection: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+2026-04-16 16:21:19,988 [ERROR] ConfigurationRetriever:142 - IOException on connection: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target

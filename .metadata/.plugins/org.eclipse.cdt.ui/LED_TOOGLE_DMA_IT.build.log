@@ -1,0 +1,10 @@
+16:21:18 **** Incremental Build of configuration Debug for project LED_TOOGLE_DMA_IT ****
+make -j10 all 
+arm-none-eabi-size  LED_TOOGLE_DMA_IT.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9076	     16	   1664	  10756	   2a04	LED_TOOGLE_DMA_IT.elf
+Finished building: default.size.stdout
+ 
+
+16:21:19 Build Finished. 0 errors, 0 warnings. (took 293ms)
+
