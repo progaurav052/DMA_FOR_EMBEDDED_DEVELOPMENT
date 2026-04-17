@@ -205,6 +205,7 @@ void DMA2_Stream0_IRQHandler(void)
 {
   /* USER CODE BEGIN DMA2_Stream0_IRQn 0 */
 
+  //DMA sendinf interrupts to ARM
   //whenever the DMA interrupt occurs, its processing will be done in below ISR
   // in the ISR basically it checks for which EVENT has occured by checking the flags
   // the event could be error events , half transfer flag events , full transfer flag events
