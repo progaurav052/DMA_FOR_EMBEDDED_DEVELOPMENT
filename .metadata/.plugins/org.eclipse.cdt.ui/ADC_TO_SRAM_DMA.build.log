@@ -1,0 +1,10 @@
+14:18:20 **** Incremental Build of configuration Debug for project ADC_TO_SRAM_DMA ****
+make -j10 all 
+arm-none-eabi-size  ADC_TO_SRAM_DMA.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11628	     12	   1772	  13412	   3464	ADC_TO_SRAM_DMA.elf
+Finished building: default.size.stdout
+ 
+
+14:18:20 Build Finished. 0 errors, 0 warnings. (took 181ms)
+
