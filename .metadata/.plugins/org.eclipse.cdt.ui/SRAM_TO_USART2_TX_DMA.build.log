@@ -1,0 +1,10 @@
+18:50:07 **** Incremental Build of configuration Debug for project SRAM_TO_USART2_TX_DMA ****
+make -j10 all 
+arm-none-eabi-size  SRAM_TO_USART2_TX_DMA.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11616	     16	   1736	  13368	   3438	SRAM_TO_USART2_TX_DMA.elf
+Finished building: default.size.stdout
+ 
+
+18:50:08 Build Finished. 0 errors, 0 warnings. (took 426ms)
+
