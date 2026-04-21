@@ -19,8 +19,8 @@
 #include <stdint.h>
 #include "stm32f446xx.h"
 
-void button_Gpio_Init(void);
-void uart2_Gpio_Init(void);
+void button_Init(void);
+void uart2_Init(void);
 void dma1_Init(void);
 
 #define BASE_ADDR_OF_GPIOC_PERI   GPIOC
@@ -31,8 +31,8 @@ void dma1_Init(void);
 int main(void)
 {
     /* Loop forever */
-	button_Gpio_Init();
-	uart2_Gpio_Init();
+	button_Init();
+	uart2_Init();
 	dma1_Init();
 
 	while(1)
@@ -41,7 +41,7 @@ int main(void)
 	}
 }
 
-void button_Gpio_Init(void){
+void button_Init(void){
 
 	// button is connected to pc13 , GPIO C , verify in the sheet , blue button
 	// we have to configure this button to trigger falling / rising edge interrupts
@@ -82,9 +82,58 @@ void button_Gpio_Init(void){
 
 
 }
-void uart2_Gpio_Init(void){
+void uart2_Init(void){
+
+	//1. Enbale the clock for USART2 peripheral
+	RCC->APB1ENR |= ( 1<<17 );
+	//2. configure the GPIO pins for USART_TX and USART_RX
+    // in our board USART2 peripheral provide virtual com support
+    // GPIO PA 2-TX , PA3-RX
+	//First clear the bits
+
+	// Before this enable the clock for GPIOA peripheral
+	RCC->AHB1ENR &= ~(RCC_AHB1ENR_GPIOAEN);
+	RCC->AHB1ENR |=  RCC_AHB1ENR_GPIOAEN;
+
+	GPIOA->MODER &=~(0x3 << 4);
+	GPIOA->MODER &=~(0x3 << 6);
+
+	GPIOA->MODER |=(0x2 << 4);
+	GPIOA->MODER |=(0x2 << 6);
+
+	//configure the AFRL / AFRH register accordingly
+	//clear and set the AF7
+	GPIOA->AFR[0] &= ~(0xF << 8);
+	GPIOA->AFR[0] &= ~(0xF << 12);
+
+	GPIOA->AFR[0] |= (0x7 << 8);
+	GPIOA->AFR[0] |= (0x7 << 12);
+
+	// configure pull up resistor , for USART2,SPI,I2C both TX and RX line are High
+	GPIOA->PUPDR &=~(0x1 << 4);
+	GPIOA->PUPDR &=~(0x1 << 6);
+
+	GPIOA->PUPDR |=(0x1 << 4);
+	GPIOA->PUPDR |=(0x1 << 6);
+
+
+
+
+	//3. configue the BaudRate --> for this we need oversampling rate
+    // from the reference Manual see the Fractionl Baud Rate generation value for 16Mhz at 115200 bps
+	USART2->BRR = 0x8B;
+
+	//4. configure the mode , no_of_stop bits , partiy , HW_FLOW control etc , wordlen
+	//<no configuration required here , default values used>
+
+	// enable the TX engine , enough for ur application
+	USART2->CR1 |=(0x1 << 3);
+
+	//5. finally enable the USART peripheral
+	USART2->CR1 |=(0x1 << 13);
 
 }
+
 void dma1_Init(void){
 
 }
