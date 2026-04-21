@@ -4,5 +4,24 @@
  *  Created on: Apr 21, 2026
  *      Author: ggpai
  */
+#include "stm32f446xx.h"
 
+void clear_exti_pending_bit(){
+
+	if(EXTI->PR & ( 1 << 13))
+	{
+		EXTI->PR |= ( 1 << 13);
+
+	}
+}
+void EXTI15_10_IRQHandler(void){
+
+	// here clear the corresponding EXTI_PR bit by programming 1 to it
+	// if we dont do this interrupt will be triggered again and again
+	// if this bit is 1 , than NVIC's corresponding ENbale bit correspoding to IRQ number will be set
+	clear_exti_pending_bit();
+
+
+
+}
 

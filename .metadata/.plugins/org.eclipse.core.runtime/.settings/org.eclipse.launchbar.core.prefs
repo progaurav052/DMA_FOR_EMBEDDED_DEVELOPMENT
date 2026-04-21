@@ -1,7 +1,7 @@
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=macosx
-configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:ADC_TO_SRAM_DMA,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:DMA_LED_TOGGLE,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:DMA_Projects,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:LED_TOOGLE_DMA_IT,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:SRAM_TO_USART2_TX_DMA,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:USART_TO_SRAM_DMA_IT,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Air_Quality_RTOS Debug
+configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:ADC_TO_SRAM_DMA,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:DMA_LED_TOGGLE,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:DMA_Projects,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:LED_TOOGLE_DMA_IT,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:SRAM_TO_USART2_TX_DMA,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:USART_TO_SRAM_DMA_IT,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Air_Quality_RTOS Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:M2P_USART2_DMA_SCRATCH
 eclipse.preferences.version=1
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:ADC_TO_SRAM_DMA/activeLaunchMode=run
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:ADC_TO_SRAM_DMA/activeLaunchTarget=null\:---

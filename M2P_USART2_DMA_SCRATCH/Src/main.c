@@ -23,12 +23,18 @@ void button_Gpio_Init(void);
 void uart2_Gpio_Init(void);
 void dma1_Init(void);
 
+#define BASE_ADDR_OF_GPIOC_PERI   GPIOC
+
 //  when power is given to the MCU , it will select the default internal RC osciallator as System clock of 16Mhz
 //  for this project 16Hmz is enough ,not working with PLL engine for now
 
 int main(void)
 {
     /* Loop forever */
+	button_Gpio_Init();
+	uart2_Gpio_Init();
+	dma1_Init();
+
 	while(1)
 	{
 
@@ -36,6 +42,44 @@ int main(void)
 }
 
 void button_Gpio_Init(void){
+
+	// button is connected to pc13 , GPIO C , verify in the sheet , blue button
+	// we have to configure this button to trigger falling / rising edge interrupts
+	// configure the GPIOC - 13 to recieve the interrupt
+
+	//1. enable the clock for the peripheral , to work with registers of the peripherals
+	// by default all peripheral clocks will be disabled
+	// done using RCC
+	// evrery peripheral has peripheral register definition structure , explore in previous embeeded driver development course
+	RCC->AHB1ENR &= ~(RCC_AHB1ENR_GPIOCEN);
+	RCC->AHB1ENR |=  RCC_AHB1ENR_GPIOCEN;
+
+    //2. keep the GPIO pin in input mode
+	GPIOC->MODER &= ~(GPIO_MODER_MODE13); // 00 means input mode , 2bits are for 1 pin
+
+	// which GPIOx port should be configured in SYSCFG register (SYSCFG_EXTICR1 register)
+	//SYSCFG peripheral/Block  has to be enbaled
+	RCC->APB2ENR |=(0x1 << 14);
+
+	SYSCFG->EXTICR[3] &=~(0xF << 4);
+	SYSCFG->EXTICR[3] |=(0x2 << 4);
+
+	//3. configure the edge detection on that GPIO pin
+	// done using EXTI_FTSR register
+	EXTI->FTSR |= (0x1 << 13);
+	// refer the embeeded-c repo code for this understanding
+	// NOte IRQ number for PC-13 is 40
+
+	//4. enable the interrupt over that pin , using EXT_IMR register , enabled interrupt deliverey from EXTI to NVIC
+	EXTI->IMR |= (0x1 << 13);
+
+
+	//5. enable the IRQ related to GPIO pin in NVIC of the processor (configure the interrupt enable register in NVIC and also the priority )
+    NVIC_EnableIRQ(EXTI15_10_IRQn); //CMSIS API
+
+
+
+
 
 }
 void uart2_Gpio_Init(void){
