@@ -1,21 +1,17 @@
-18:49:34 **** Incremental Build of configuration Debug for project SRAM_TO_USART2_TX_DMA ****
+12:25:46 **** Build of configuration Debug for project M2P_USART2_DMA_SCRATCH ****
 make -j10 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "SRAM_TO_USART2_TX_DMA.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/ggpai/Desktop/DMA/workspace/SRAM_TO_USART2_TX_DMA/STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SRAM_TO_USART2_TX_DMA.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: SRAM_TO_USART2_TX_DMA.elf
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f446retx.d" -MT"Startup/startup_stm32f446retx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32f446retx.o" "../Startup/startup_stm32f446retx.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DSTM32F446xx -c -I../Inc -I"/Users/ggpai/Desktop/DMA/workspace/M2P_USART2_DMA_SCRATCH/CMSIS_CORE/Include" -I"/Users/ggpai/Desktop/DMA/workspace/M2P_USART2_DMA_SCRATCH/CMSIS_CORE/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DSTM32F446xx -c -I../Inc -I"/Users/ggpai/Desktop/DMA/workspace/M2P_USART2_DMA_SCRATCH/CMSIS_CORE/Include" -I"/Users/ggpai/Desktop/DMA/workspace/M2P_USART2_DMA_SCRATCH/CMSIS_CORE/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DSTM32F446xx -c -I../Inc -I"/Users/ggpai/Desktop/DMA/workspace/M2P_USART2_DMA_SCRATCH/CMSIS_CORE/Include" -I"/Users/ggpai/Desktop/DMA/workspace/M2P_USART2_DMA_SCRATCH/CMSIS_CORE/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -o "M2P_USART2_DMA_SCRATCH.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/ggpai/Desktop/DMA/workspace/M2P_USART2_DMA_SCRATCH/STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="M2P_USART2_DMA_SCRATCH.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: M2P_USART2_DMA_SCRATCH.elf
  
-arm-none-eabi-size  SRAM_TO_USART2_TX_DMA.elf 
-arm-none-eabi-objdump -h -S SRAM_TO_USART2_TX_DMA.elf  > "SRAM_TO_USART2_TX_DMA.list"
+arm-none-eabi-size  M2P_USART2_DMA_SCRATCH.elf 
+arm-none-eabi-objdump -h -S M2P_USART2_DMA_SCRATCH.elf  > "M2P_USART2_DMA_SCRATCH.list"
    text	   data	    bss	    dec	    hex	filename
-  11616	     16	   1736	  13368	   3438	SRAM_TO_USART2_TX_DMA.elf
+    712	      0	   1568	   2280	    8e8	M2P_USART2_DMA_SCRATCH.elf
 Finished building: default.size.stdout
  
-Finished building: SRAM_TO_USART2_TX_DMA.list
- 
-18:50:07 **** Incremental Build of configuration Debug for project SRAM_TO_USART2_TX_DMA ****
-make -j10 all 
-arm-none-eabi-size  SRAM_TO_USART2_TX_DMA.elf 
-   text	   data	    bss	    dec	    hex	filename
-  11616	     16	   1736	  13368	   3438	SRAM_TO_USART2_TX_DMA.elf
-Finished building: default.size.stdout
+Finished building: M2P_USART2_DMA_SCRATCH.list
  
