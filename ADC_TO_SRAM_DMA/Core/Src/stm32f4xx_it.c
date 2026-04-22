@@ -208,6 +208,7 @@ void EXTI15_10_IRQHandler(void)
 	//button interrupt handler , when button is pressed
 	// here we will kickstart the ADC conversion
   HAL_ADC_Start_DMA(&hadc1, (uint32_t *)temp_sensor_data,16);
+  HAL_ADC_Start_DMA(hadc, pData, Length)
   //here we are transfering half word (every conversion) , number of such data items
   //meaning DMA will transfer half word by half word 16 times
   //after this transfer of 16 data items is done , DMA will interrupt the ARM and ARM will service the interrupt and call DMA_conversion complete callback

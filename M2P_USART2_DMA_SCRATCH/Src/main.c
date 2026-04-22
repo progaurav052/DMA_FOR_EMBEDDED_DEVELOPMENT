@@ -22,8 +22,10 @@
 void button_Init(void);
 void uart2_Init(void);
 void dma1_Init(void);
+void send_data_over_usart2(void);
+#define BASE_ADDR_OF_GPIOC_PERI   GPIOC\
 
-#define BASE_ADDR_OF_GPIOC_PERI   GPIOC
+char data_stream[]="Hello from gaurav\r\n";
 
 //  when power is given to the MCU , it will select the default internal RC osciallator as System clock of 16Mhz
 //  for this project 16Hmz is enough ,not working with PLL engine for now
@@ -33,12 +35,35 @@ int main(void)
     /* Loop forever */
 	button_Init();
 	uart2_Init();
+	//send_data_over_usart2();
+
 	dma1_Init();
 
 	while(1)
 	{
 
 	}
+}
+
+void send_data_over_usart2(void)
+{
+
+
+	// make sure the DR in TX engine is empty for the data to be transferred
+
+	// by default no parity , 8 bits of data
+	uint32_t len = sizeof(data_stream);
+	for(uint32_t i =0; i< len ;i++)
+	{
+		while(!(USART2->SR & (0x1 << 7))); // hand till Transmit data register is not empty
+
+		//put data byte by byte to DR
+		USART2->DR = data_stream[i];
+
+	}
+
+
+
 }
 
 void button_Init(void){
@@ -129,11 +154,84 @@ void uart2_Init(void){
 	// enable the TX engine , enough for ur application
 	USART2->CR1 |=(0x1 << 3);
 
-	//5. finally enable the USART peripheral
+	//5. finally enable the USART peripheral , after all configs
 	USART2->CR1 |=(0x1 << 13);
 
 }
 
 void dma1_Init(void){
+
+	//1. enable the peripheral clock for DMA1 , this is also is a peripheral connected to AHB1 bus
+	RCC->AHB1ENR |= (1 << 21);
+
+	//2. Identify the stream suitable for your peripheral
+	// stream -6 , channel -4
+	// channel selection , configure bits CHSEL[2:0] in order to select a particular channel line for a stream
+
+
+	//3. identify the channel number on which USART 2 sends request
+	// use channel selection
+	DMA1_Stream6->CR &=~(0x7 << 25);
+	DMA1_Stream6->CR |=(0x4 << 25); // indicates channel selection
+
+	//4. program src address
+	DMA1_Stream6->M0AR |= (uint32_t)data_stream;
+
+	//pointer type conversion to uint32_t
+
+	//5. program the dest address
+	DMA1_Stream6->PAR |= (uint32_t) &USART2->DR;
+	//pointer type conversion to uint32_t
+
+
+	//6. program number of data items.
+	// length determines end of transfer
+	uint32_t len = sizeof(data_stream);
+	DMA1_Stream6->NDTR |= len;
+
+
+	//7. the direction of data transfer. m2p , p2m, m2m
+	DMA1_Stream6->CR |= (0x1 << 6); // refer the reference manul DMA control register
+
+	//8. program the source and destination data width . wheteher transfer should be byte byte or half word etc . in oour case its USART DR is of 8 bits
+    // application  specific , in our case its USART it can max 8-9 bits at a time in DR
+	// destination data width as 1 byte -> take 1 byte from memory and put 1 byte to Peripheral DR
+	DMA1_Stream6->CR &= ~(0x3 << 13); // configure mem data size
+	DMA1_Stream6->CR &= ~(0x3 << 11); // peripheral data size
+
+	// 8.a enable memory auto increement
+	DMA1_Stream6->CR |=(1 << 10);
+
+	//9. select direct mode or fifo
+    // for this application it does nnot matter if direct or fifo , lets us FIFO anyway
+    DMA1_Stream6->FCR |=(0x1 << 2); // will disable Direct mode , hence fifo is enabled
+
+	//10. select the fifo threshold
+    //lets use full threshold
+    //clear and set the bits
+    DMA1_Stream6->FCR &=~(0x3 << 0);
+    DMA1_Stream6->FCR |=(0x3 << 0);
+
+	//11. enable circular mode if reqd
+    // No idea about this , disable for now , by default disabled
+
+	//12. select single transfer or burst transfer
+    // No idea about this , disable for now , by default disabled
+
+	//13. configure the stream priority , not reqd for this exercise
+    // for this application we dont have any other peripheral competing for DMA , can keep it as low priority for now
+
+
+	//14. enable the stream
+	DMA1_Stream6->CR |= (0x1 << 0);
+	// as soon as enabled , in m2p mode fifo will be fully loaded with data from memory and based on threshold will be filled again if transfer has begun
+
+
+	// once all this config has been done and stream is enabled , inside the button handler  i will send USART2 request to DMA over the configured channel
+	// USE  DMAT bit in control register of the necessry peripheral
+	// DMA Transmitter bit
+
+
+
 
 }

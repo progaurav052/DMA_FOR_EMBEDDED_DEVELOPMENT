@@ -1,17 +1,10 @@
-23:38:40 **** Incremental Build of configuration Debug for project M2P_USART2_DMA_SCRATCH ****
+00:19:18 **** Incremental Build of configuration Debug for project M2P_USART2_DMA_SCRATCH ****
 make -j10 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DSTM32F446xx -c -I../Inc -I"/Users/ggpai/Desktop/DMA/workspace/M2P_USART2_DMA_SCRATCH/CMSIS_CORE/Include" -I"/Users/ggpai/Desktop/DMA/workspace/M2P_USART2_DMA_SCRATCH/CMSIS_CORE/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "M2P_USART2_DMA_SCRATCH.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/ggpai/Desktop/DMA/workspace/M2P_USART2_DMA_SCRATCH/STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="M2P_USART2_DMA_SCRATCH.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: M2P_USART2_DMA_SCRATCH.elf
- 
 arm-none-eabi-size  M2P_USART2_DMA_SCRATCH.elf 
-arm-none-eabi-objdump -h -S M2P_USART2_DMA_SCRATCH.elf  > "M2P_USART2_DMA_SCRATCH.list"
    text	   data	    bss	    dec	    hex	filename
-   1220	      0	   1568	   2788	    ae4	M2P_USART2_DMA_SCRATCH.elf
+   1428	     20	   1564	   3012	    bc4	M2P_USART2_DMA_SCRATCH.elf
 Finished building: default.size.stdout
  
-Finished building: M2P_USART2_DMA_SCRATCH.list
- 
 
-23:38:42 Build Finished. 0 errors, 0 warnings. (took 1s.753ms)
+00:19:18 Build Finished. 0 errors, 0 warnings. (took 179ms)
 
