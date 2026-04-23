@@ -22,10 +22,21 @@
 void button_Init(void);
 void uart2_Init(void);
 void dma1_Init(void);
+void dma1_stream6_enable(void);
 void send_data_over_usart2(void);
+void dma1_interrupt_configuration(void);
+
+
+//function prototypes of the callbacks
+void HT_Complete_callback(void);
+void FT_Complete_callback(void);
+void TE_error_callback(void);
+void DME_error_callback(void);
+void FE_error_callback(void);
+
 #define BASE_ADDR_OF_GPIOC_PERI   GPIOC\
 
-char data_stream[]="Hello from gaurav\r\n";
+char data_stream[]="Gaurav";
 
 //  when power is given to the MCU , it will select the default internal RC osciallator as System clock of 16Mhz
 //  for this project 16Hmz is enough ,not working with PLL engine for now
@@ -34,10 +45,18 @@ int main(void)
 {
     /* Loop forever */
 	button_Init();
-	uart2_Init();
-	//send_data_over_usart2();
 
+	//send_data_over_usart2();
+	uart2_Init();
+
+    //dma config
 	dma1_Init();
+
+	dma1_interrupt_configuration();
+
+	//after init done , enable the stream
+	dma1_stream6_enable();
+
 
 	while(1)
 	{
@@ -222,10 +241,6 @@ void dma1_Init(void){
     // for this application we dont have any other peripheral competing for DMA , can keep it as low priority for now
 
 
-	//14. enable the stream
-	DMA1_Stream6->CR |= (0x1 << 0);
-	// as soon as enabled , in m2p mode fifo will be fully loaded with data from memory and based on threshold will be filled again if transfer has begun
-
 
 	// once all this config has been done and stream is enabled , inside the button handler  i will send USART2 request to DMA over the configured channel
 	// USE  DMAT bit in control register of the necessry peripheral
@@ -234,4 +249,77 @@ void dma1_Init(void){
 
 
 
+}
+
+void dma1_stream6_enable(void)
+{
+	//14. enable the stream
+	DMA1_Stream6->CR |= (0x1 << 0);
+	// as soon as enabled , in m2p mode fifo will be fully loaded with data from memory and based on threshold will be filled again if transfer has begun
+}
+
+void dma1_interrupt_configuration(void)
+{
+	// all this done under stream x configuration register
+
+	//1.  half-transfer enable interrupt
+	DMA1_Stream6->CR |= (0x1 << 3);
+
+	//2.  Trasnfer complete IE
+	DMA1_Stream6->CR |= (0x1 << 4);
+	//3.  Transfer error IE
+	DMA1_Stream6->CR |= (0x1 << 2);
+	//4.  FIFO overun/underun IE
+	DMA1_Stream6->FCR |= (0x1 << 7);
+
+	//5. Direct mode error
+	DMA1_Stream6->CR |= (0x1 << 1);
+
+
+	// processor side configuration , enbale the ISER bit for IRQ inside the NVIC
+	NVIC_EnableIRQ(DMA1_Stream6_IRQn);
+
+
+
+}
+
+void HT_Complete_callback(void)
+{
+
+}
+
+void FT_Complete_callback(void)
+{
+	USART_TypeDef *pUART2;
+	pUART2 = USART2;
+
+	DMA_Stream_TypeDef *pSTREAM6;
+	pSTREAM6 = DMA1_Stream6;
+
+	// this logic is implememted to send data again
+	//Program number of data items to send
+	uint32_t len = sizeof(data_stream);
+	pSTREAM6->NDTR = len;
+
+	pUART2->CR3 &= ~( 1 << 7);
+
+	dma1_stream6_enable();
+
+}
+
+
+void TE_error_callback(void)
+{
+	while(1);
+}
+
+void FE_error_callback(void)
+{
+
+	while(1);
+}
+
+void DME_error_callback(void)
+{
+	while(1);
 }
