@@ -1,10 +1,10 @@
-11:59:19 **** Incremental Build of configuration Debug for project M2P_USART2_DMA_SCRATCH ****
+12:11:49 **** Incremental Build of configuration Debug for project M2P_USART2_DMA_SCRATCH ****
 make -j10 all 
 arm-none-eabi-size  M2P_USART2_DMA_SCRATCH.elf 
    text	   data	    bss	    dec	    hex	filename
-   1792	      8	   1568	   3368	    d28	M2P_USART2_DMA_SCRATCH.elf
+   1780	      8	   1568	   3356	    d1c	M2P_USART2_DMA_SCRATCH.elf
 Finished building: default.size.stdout
  
 
-11:59:20 Build Finished. 0 errors, 0 warnings. (took 192ms)
+12:11:49 Build Finished. 0 errors, 0 warnings. (took 163ms)
 

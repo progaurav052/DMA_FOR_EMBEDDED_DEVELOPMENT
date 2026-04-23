@@ -31,7 +31,6 @@ void clear_exti_pending_bit(){
 void EXTI15_10_IRQHandler(void){
 
 
-    // sending the USART2_TX_DMA request to DMA1 controller
 	USART2->CR3 |= (0x1 << 7);
 
 	// here clear the corresponding EXTI_PR bit by programming 1 to it

@@ -302,11 +302,7 @@ void FT_Complete_callback(void)
 	pSTREAM6->NDTR = len;
 
 	pUART2->CR3 &= ~( 1 << 7);
-	// this line is important
 
-	//it is important that we dont do not enable the stream when the request is on ...
-	// first enable the stream  -> send the request to DMA
-	//else will lead to error
 	dma1_stream6_enable();
 
 }
